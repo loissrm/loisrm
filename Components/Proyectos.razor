@@ -1,0 +1,79 @@
+@inject HttpClient Http
+@using System.Text.Json
+
+<section id="proyectos" class="seccion">
+    <div class="file-tab">
+        <span data-i18n="acerca.tab">Proyectos/</span>
+        <span class="flechaCerrar">x</span>
+    </div>
+    <div class="file-panel proyectosContainer reveal">
+        <h1 class="titulo" data-i18n="proyectos.titulo">Proyectos</h1>
+        <div class="cards-wrapper">
+            @if (proyectos is null)
+            {
+                <p>Cargando proyectos...</p>
+            }
+            else
+            {
+                @foreach (var proyecto in proyectos)
+                {
+                    <a href="@proyecto.Url" class="proj-card">
+                        <div class="inner">
+
+                            <div class="top-row">
+                                <span class="year">@proyecto.Anio</span>
+                                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </div>
+
+                            <p class="title">@proyecto.Titulo</p>
+
+                            <p class="description">@proyecto.Descripcion</p>
+
+                            <div class="tags">
+                                @foreach (var tech in proyecto.Tecnologias)
+                                {
+                                    <span class="tag tag-@tech.ColorName">@tech.Nombre</span>
+                                }
+                            </div>
+
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+    private List<Proyecto>? proyectos;
+
+    private static readonly JsonSerializerOptions jsonOptions = new()
+    {
+        PropertyNameCaseInsensitive = true
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var response = await Http.GetAsync("data/proyectos.json");
+        proyectos = await response.Content.ReadFromJsonAsync<List<Proyecto>>(jsonOptions);
+    }
+
+    public class Proyecto
+    {
+        public string Titulo { get; set; } = string.Empty;
+        public string Descripcion { get; set; } = string.Empty;
+        public string Anio { get; set; } = string.Empty;
+        public string Url { get; set; } = "#";
+        public List<TechTag> Tecnologias { get; set; } = new();
+    }
+
+    public class TechTag
+    {
+        public string Nombre { get; set; } = string.Empty;
+        public string Icono { get; set; } = string.Empty; // ej. "ti-brand-csharp"
+        public string ColorName { get; set; } = "purple"; // purple | teal | coral | pink | blue | green | amber | red | gray
+    }
+}

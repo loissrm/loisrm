@@ -1,0 +1,35 @@
+﻿@inherits LayoutComponentBase
+@using Portfolio.Components
+@inject IJSRuntime JS
+
+<div class="page @ObtenerClase()">
+    <NavBar />
+    <ControlesTop OnThemeChanged="CambiarTema" />
+
+<main id="portfolio" class="portfolio">
+    @Body
+</main>
+</div>
+
+
+@code {
+    private string modoSeleccionado = "Luz";
+
+    private void CambiarTema(bool isDark)
+    {
+        modoSeleccionado = isDark ? "Oscuro" : "Luz";
+        StateHasChanged(); 
+    }
+
+    private string ObtenerClase() => modoSeleccionado == "Luz" ? string.Empty : "dark-mode";
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var module = await JS.InvokeAsync<IJSObjectReference>("import", "./scrollspy.js");
+            await module.InvokeVoidAsync("iniciarScrollSpy");
+        }
+    }
+}

@@ -1,0 +1,83 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Portfolio
+build_property.RootNamespace = Portfolio
+build_property.ProjectDir = C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/Contacto.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWN0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/ControlesTop.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sZXNUb3AucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/Hero.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZXJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/Inicio.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbmljaW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/NavBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/PantallaCarga.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYW50YWxsYUNhcmdhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/Proyectos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm95ZWN0b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Components/SobreMi.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTb2JyZU1pLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loisr/Documents/Blazor/Portfolio/Portfolio/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xn2l5aia1e

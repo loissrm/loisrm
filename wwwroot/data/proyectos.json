@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Portfolio Blazor",
+    "descripcion": "Portfolio personal con Blazor WebAssembly con estética de editor de código, arquitectura limpia y soporte multi-idioma (ES/EN/GL).",
+    "anio": "2026",
+    "url": "",
+    "tecnologias": [
+      { "nombre": "C#", "colorName": "kw" },
+      { "nombre": "Blazor", "colorName": "fn" },
+      { "nombre": "CSS", "colorName": "str" }
+    ]
+  },
+  {
+    "titulo": "Frog Jumping",
+    "descripcion": "Videojuego creado con Unity",
+    "anio": "2025",
+    "url": "",
+    "tecnologias": [
+      { "nombre": "Unity", "colorName": "fn" }
+    ]
+  },
+  {
+    "titulo": "Gestor de biblioteca",
+    "descripcion": "Aplicación de gestión de biblioteca con roles de usuario, préstamos y búsqueda de libros por ISBN.",
+    "anio": "2024",
+    "url": "",
+    "tecnologias": [
+      { "nombre": "Next.js", "colorName": "comment" },
+      { "nombre": "Supabase", "colorName": "type" }
+    ]
+  }
+]

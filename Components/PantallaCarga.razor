@@ -1,0 +1,41 @@
+<div id="pantallaCarga" class="pantallaCarga @(isHiding ? "hide" : "")">
+    <div class="contenidoCarga">
+        <h1 class="bienvenido">
+            @for (int i = 0; i < palabra.Length; i++)
+            {
+                <span style="animation-delay: @(0.1 + (i * 0.08))s">@palabra[i]</span>
+            }
+        </h1>
+        <div class="barraCarga">
+            <div class="progreso" style="width: @(progress)%"></div>
+        </div>
+        <p class="porcentaje">@progress%</p>
+        <p class="cargando @(isReady ? "ready" : "")">@(isReady ? "LISTO" : "Cargando")</p>
+    </div>
+</div>
+
+@code {
+    private string palabra = "BIENVENIDO";
+    private int progress = 0;
+    private bool isHiding = false;
+    private bool isReady = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulamos tu SPEED = 15ms
+        while (progress < 100)
+        {
+            await Task.Delay(15);
+            progress++;
+            StateHasChanged();
+        }
+
+        // Finalización
+        isReady = true;
+        StateHasChanged();
+
+        await Task.Delay(600);
+        isHiding = true;
+        StateHasChanged();
+    }
+}
