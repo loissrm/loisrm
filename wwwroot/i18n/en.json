@@ -4,5 +4,15 @@
   "proyectoDetalle.volver": "back to projects",
   "loader.cargando": "Loading",
   "loader.listo": "Ready",
-  "contacto":"Contact"
+  "contacto.tab": "Contact",
+  "contacto.titulo": "Contact",
+  "contacto.texto": "Want to know more about me? Write to me and let's talk.",
+  "acerca.titulo": "About me",
+  "acerca.nombre": "Lois Rodríguez Moimenta",
+  "acerca.introTitulo": "Who I am",
+  "acerca.introTexto": "Web developer interested in both frontend and backend, working with Astro, Blazor, Next.js and Supabase among other technologies.",
+  "acerca.experienciaTitulo": "Experience",
+  "acerca.educacionTitulo": "Education",
+  "acerca.educacionComplementariaTitulo": "Additional education",
+  "acerca.skillsTitulo": "Technical skills"
 }

@@ -6,5 +6,13 @@
   "loader.listo": "Listo",
   "contacto.tab": "Contacto",
   "contacto.titulo": "Contacto",
-  "contacto.texto": "Se queres saber algo máis de min, escríbeme e falamos."
+  "contacto.texto": "Se queres saber algo máis de min, escríbeme e falamos.",
+  "acerca.titulo": "Acerca de min",
+  "acerca.nombre": "Lois Rodríguez Moimenta",
+  "acerca.introTitulo": "Quen son",
+  "acerca.introTexto": "Desenvolvedor web con interese tanto en frontend como en backend, traballando con Astro, Blazor, Next.js e Supabase entre outras tecnoloxías.",
+  "acerca.experienciaTitulo": "Experiencia",
+  "acerca.educacionTitulo": "Educación",
+  "acerca.educacionComplementariaTitulo": "Educación complementaria",
+  "acerca.skillsTitulo": "Habilidades técnicas"
 }

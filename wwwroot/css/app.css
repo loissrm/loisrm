@@ -303,8 +303,8 @@ body.loading { overflow: hidden; height: 100vh; touch-action: none; }
 
 .lang-switch button:hover { color: var(--text); }
 .lang-switch button.activo {
-    background: var(--accent);
-    color: var(--accent-contrast);
+    background: var(--button-principal-active);
+    color: var(--button-principal-text);
 }
 
 .btnNigthMode {
@@ -541,6 +541,7 @@ body.loading { overflow: hidden; height: 100vh; touch-action: none; }
 /* =========================
    ACERCA
 ========================= */
+
 .acercaContent h3 {
   font-family: var(--font-mono);
   font-size: 1rem;
@@ -549,6 +550,146 @@ body.loading { overflow: hidden; height: 100vh; touch-action: none; }
 }
 .acercaContent h3:first-of-type { margin-top: 0; }
 .acercaContent .subtitulo { max-width: 100%; }
+
+/* =========================
+   ACERCA DE MÍ — TIMELINE
+========================= */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 18px;
+}
+
+.timeline-marcador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.timeline-punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.timeline-linea {
+    width: 1px;
+    flex: 1;
+    background: var(--border);
+    margin: 4px 0;
+}
+
+.timeline-contenido {
+    padding-bottom: 28px;
+}
+
+.timeline-fecha {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.timeline-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 6px 0 2px;
+}
+
+.timeline-subtitulo {
+    font-size: 13px;
+    color: var(--accent);
+    margin: 0 0 8px;
+}
+
+.timeline-descripcion {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* =========================
+   ACERCA DE MÍ — EDUCACIÓN COMPLEMENTARIA
+========================= */
+.complementaria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.complementaria-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.complementaria-card:hover {
+    border-color: var(--border-strong);
+    transform: translateY(-2px);
+}
+
+.complementaria-imagen,
+.complementaria-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--surface-2);
+}
+
+.complementaria-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.complementaria-fecha {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.complementaria-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 6px 0 2px;
+}
+
+.complementaria-entidad {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* =========================
+   ACERCA DE MÍ — HABILIDADES
+========================= */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
 
 
 /* =========================

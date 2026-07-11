@@ -4,6 +4,15 @@
   "proyectoDetalle.volver": "volver a proyectos",
   "loader.cargando": "Cargando",
   "loader.listo": "Listo",
-  "contacto":"Contacto"
-
+  "contacto.tab": "Contacto",
+  "contacto.titulo": "Contacto",
+  "contacto.texto": "Si quieres saber algo más de mí, escríbeme y hablamos.",
+  "acerca.titulo": "Acerca de mí",
+  "acerca.nombre": "Lois Rodríguez Moimenta",
+  "acerca.introTitulo": "Quién soy",
+  "acerca.introTexto": "Desarrollador web con interés tanto en frontend como en backend, trabajando con Astro, Blazor, Next.js y Supabase entre otras tecnologías.",
+  "acerca.experienciaTitulo": "Experiencia",
+  "acerca.educacionTitulo": "Educación",
+  "acerca.educacionComplementariaTitulo": "Educación complementaria",
+  "acerca.skillsTitulo": "Habilidades técnicas"
 }

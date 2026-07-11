@@ -10,7 +10,7 @@ public class LocalizationService
     private readonly IJSRuntime _js;
     private Dictionary<string, string> _traducciones = new();
 
-    public string IdiomaActual { get; private set; } = "es";
+    public string IdiomaActual { get; private set; } = "gl";
 
     /// <summary>Se dispara cuando cambia el idioma, para que los componentes se re-rendericen.</summary>
     public event Action? OnIdiomaCambiado;
