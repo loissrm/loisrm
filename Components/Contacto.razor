@@ -1,11 +1,13 @@
+@inherits LocalizedComponentBase
+
 <section id="contacto" class="seccion">
     <div class="file-tab">
-        <span data-i18n="acerca.tab">Contacto</span>
+        <span>@Loc.T("contacto.tab")</span>
         <span class="flechaCerrar">x</span>
     </div>
     <div class="file-panel contactoContainer reveal" style="text-align:center;">
-        <h1 class="titulo" data-i18n="contacto.titulo">Contacto</h1>
-        <p data-i18n="contacto.texto">Si quieres saber algo mas de mi, escríbeme y hablamos.</p>
+        <h1 class="titulo">@Loc.T("contacto.titulo")</h1>
+        <p>@Loc.T("contacto.texto")</p>
         <div class="botonesInicio" style="justify-content:center;">
         <a href="mailto:loiss.rodriguezz@gmail.com" class="btn primary">loiss.rodriguezz@gmail.com</a>
         </div>

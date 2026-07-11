@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\i18n\\en.json",
+      "PackagePath": "staticwebassets\\i18n\\en.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\i18n\\es.json",
+      "PackagePath": "staticwebassets\\i18n\\es.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\i18n\\gl.json",
+      "PackagePath": "staticwebassets\\i18n\\gl.json"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },

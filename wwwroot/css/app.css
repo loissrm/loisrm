@@ -116,6 +116,87 @@ bosy.dark-mode::before {
 }
 
 /* =========================
+   LOADER
+========================= */
+.pantallaCarga {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.pantallaCarga.hide { opacity: 0; visibility: hidden; }
+
+.contenidoCarga { text-align: center; }
+
+.bienvenido {
+  display: flex;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: var(--text);
+}
+
+.bienvenido span {
+  display: inline-block;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: rise 0.6s ease forwards;
+}
+
+@keyframes rise {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.barraCarga {
+  width: 260px;
+  height: 4px;
+  background: var(--surface-2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.progreso {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.15s linear;
+}
+
+.porcentaje {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+}
+
+.cargando {
+  font-family: var(--font-mono);
+  letter-spacing: 4px;
+  font-size: 13px;
+  color: var(--text-muted);
+  opacity: 1;
+  animation: blink 1.7s linear infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.cargando.ready { animation: none; opacity: 1; color: var(--success); }
+
+body.loading { overflow: hidden; height: 100vh; touch-action: none; }
+.pantallaCarga { pointer-events: all; }
+.pantallaCarga.hide { pointer-events: none; }
+
+
+/* =========================
    HEADER: ACTIVITY BAR + CONTROLES
 ========================= */
 .menu {
@@ -349,7 +430,6 @@ bosy.dark-mode::before {
   gap: 3rem;
   align-items: center;
   min-height: calc(100vh - 12rem);
-  
 }
 
 
@@ -402,7 +482,7 @@ bosy.dark-mode::before {
 .buttonProyectos { all: unset; display: flex; align-items: center; gap: 8px; cursor: pointer; }
 .svgIcon { width: 1em; height: 1em; fill: currentColor; }
 
-.barraHorizontal { border: none; border-top: 1px solid black; margin: 2rem 0 1.2rem; }
+.barraHorizontal {border: none; border-top: 1px solid black; margin: 2rem 0 1.2rem; }
 
 .redesCorreo{
   display: flex;
@@ -448,7 +528,7 @@ bosy.dark-mode::before {
 
 .socialLinks a:hover::after { opacity: 1; transform: translateX(0); }
 
-.inicioImagen { display: flex; align-items: center; justify-content: center; position: relative; }
+.inicioImagen { display: flex; align-items: center; justify-content: end; position: relative; }
 .inicioImagen img {
   width: 100%; max-width: 22rem; aspect-ratio: 1/1; object-fit: cover;
   border-radius: 14px;
@@ -663,6 +743,16 @@ bosy.dark-mode::before {
   transition: height 0.2s ease;
 }
 .menu a.active::before { height: 3px; }
+
+  .redesCorreo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .inicioImagen { display: flex; align-items: center; justify-content: center; position: relative; }
+
 }
 
 @media (max-width: 700px) {
@@ -689,6 +779,17 @@ bosy.dark-mode::before {
   border-radius: 2px;
   background: var(--accent);
   transition: height 0.2s ease;
-}
+  
+  }
 .menu a.active::before { height: 3px; }
+
+  .redesCorreo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .inicioImagen { display: flex; align-items: center; justify-content: center; position: relative; }
+
 }

@@ -1,8 +1,11 @@
+@inject LocalizationService Loc
+@implements IDisposable
+
 <div class="controlesTop">
     <div class="lang-switch" role="group" aria-label="Selector de idioma">
-      <button type="button" data-lang="es">ES</button>
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="gl">GL</button>
+      <button type="button" class="@(Loc.IdiomaActual == "es" ? "activo" : "")" @onclick='() => Loc.CambiarIdiomaAsync("es")'>ES</button>
+      <button type="button" class="@(Loc.IdiomaActual == "en" ? "activo" : "")" @onclick='() => Loc.CambiarIdiomaAsync("en")'>EN</button>
+      <button type="button" class="@(Loc.IdiomaActual == "gl" ? "activo" : "")" @onclick='() => Loc.CambiarIdiomaAsync("gl")'>GL</button>
     </div>
     <div class="btnNigthMode">
       <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn">
@@ -31,7 +34,17 @@
 
     private async Task HandleChange(ChangeEventArgs e)
     {
-        bool isDark = (bool)e.Value;
+        bool isDark = (bool)e.Value!;
         await OnThemeChanged.InvokeAsync(isDark);
+    }
+
+    protected override void OnInitialized()
+    {
+        Loc.OnIdiomaCambiado += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        Loc.OnIdiomaCambiado -= StateHasChanged;
     }
 }
