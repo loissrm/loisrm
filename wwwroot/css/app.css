@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
 
 
+
 /* =========================
    TOKENS
 ========================= */
@@ -88,7 +89,10 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.page.dark-mode.body {
+body:focus {
+    outline: none;
+}
+bosy.dark-mode {
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -98,7 +102,7 @@ body {
 }
 
 /* fondo de rejilla sutil, presente en toda la página */
-.page.dark-mode.body::before {
+bosy.dark-mode::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -272,7 +276,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 6rem;
-  margin-left: 50px;
 }
 
 .seccion {
@@ -346,7 +349,9 @@ body {
   gap: 3rem;
   align-items: center;
   min-height: calc(100vh - 12rem);
+  
 }
+
 
 .kicker {
   font-family: var(--font-mono);
@@ -355,6 +360,8 @@ body {
   text-transform: uppercase;
   color: var(--text-kicker);
   margin-bottom: 1rem;
+      padding-left: 3px;
+
 }
 
 .titulo {
@@ -659,6 +666,8 @@ body {
 }
 
 @media (max-width: 700px) {
+
+  
   .menu {
     top: auto; bottom: 16px; left: 50%; transform: translateX(-50%);
     flex-direction: row;
