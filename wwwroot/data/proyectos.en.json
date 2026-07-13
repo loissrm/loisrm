@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Blazor Portfolio",
+    "descripcion": "Migration of my personal portfolio to Blazor WebAssembly with a code-editor aesthetic, clean architecture and multi-language support (ES/EN/GL).",
+    "anio": "2026",
+    "url": "/proyectos/portfolio-blazor",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "C#", "icono": "csharp", "colorHex": "512BD4" },
+      { "nombre": "Blazor", "icono": "blazor", "colorHex": "512BD4" },
+      { "nombre": "CSS", "icono": "css3", "colorHex": "1572B6" }
+    ]
+  },
+  
+  {
+    "titulo": "Library manager",
+    "descripcion": "Library management application with user roles, book borrowing tracking and ISBN-based search.",
+    "anio": "2024",
+    "url": "/proyectos/gestor-biblioteca",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "Next.js", "icono": "nextdotjs", "colorHex": "000000" },
+      { "nombre": "Supabase", "icono": "supabase", "colorHex": "3ECF8E" }
+    ]
+  }
+]

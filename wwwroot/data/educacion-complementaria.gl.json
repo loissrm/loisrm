@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Introducción a Ciencia de Datos",
+    "entidad": "Cisco",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/9ced8799-9b8d-4e44-a7e2-0431c12297a2/public_url",
+    "imagen": "/img/imgEduComple/introduction-to-data-science.png",
+    "aptitudes": [
+      "Análise de datos",
+      "Recompilación de datos",
+      "Validación de datos"
+    ]
+  },
+  {
+    "titulo": "Introdución á Ciberseguridade",
+    "entidad": "Cisco",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/9d0009ac-ab19-430c-b6f6-b64eb1a16cf4/public_url",
+    "imagen": "/img/imgEduComple/introduction-to-cybersecurity.png",
+    "aptitudes": [
+      "Boas prácticas de ciberseguridade",
+      "Ciberseguridade",
+      "Vulnerabilidades de rede",
+      "Privacidade e confidencialidade de datos",
+      "Detección de ameazas"
+    ]
+  },
+  {
+    "titulo": "Fundamentos da Intelixencia artificial",
+    "entidad": "Cisco y IBM SkillsBuild",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/624fb854-b439-4f9f-a902-13c8f35e6263/public_url",
+    "imagen": "/img/imgEduComple/ai-fundamentals-with-ibm-skillsbuild.png",
+    "aptitudes": [
+      "Intelixencia artificial (IA)",
+      "Aprendizaxe automática (ML)",
+      "Procesamiento de linguaxe natural (PLN)",
+      "Ética da IA",
+      "Redes neurais artificiais"
+    ]
+  }
+]

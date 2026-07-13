@@ -25,32 +25,52 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion-complementaria.json",
-      "PackagePath": "staticwebassets\\data\\educacion-complementaria.json"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion-complementaria.en.json",
+      "PackagePath": "staticwebassets\\data\\educacion-complementaria.en.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion.json",
-      "PackagePath": "staticwebassets\\data\\educacion.json"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion-complementaria.es.json",
+      "PackagePath": "staticwebassets\\data\\educacion-complementaria.es.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\experiencia.json",
-      "PackagePath": "staticwebassets\\data\\experiencia.json"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion-complementaria.gl.json",
+      "PackagePath": "staticwebassets\\data\\educacion-complementaria.gl.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\habilidades.json",
-      "PackagePath": "staticwebassets\\data\\habilidades.json"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion.en.json",
+      "PackagePath": "staticwebassets\\data\\educacion.en.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyecto.cs",
-      "PackagePath": "staticwebassets\\data\\proyecto.cs"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion.es.json",
+      "PackagePath": "staticwebassets\\data\\educacion.es.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyectos.json",
-      "PackagePath": "staticwebassets\\data\\proyectos.json"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion.gl.json",
+      "PackagePath": "staticwebassets\\data\\educacion.gl.json"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\experiencia.en.json",
+      "PackagePath": "staticwebassets\\data\\experiencia.en.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\experiencia.es.json",
+      "PackagePath": "staticwebassets\\data\\experiencia.es.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\experiencia.gl.json",
+      "PackagePath": "staticwebassets\\data\\experiencia.gl.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyectos.en.json",
+      "PackagePath": "staticwebassets\\data\\proyectos.en.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyectos.es.json",
+      "PackagePath": "staticwebassets\\data\\proyectos.es.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyectos.gl.json",
+      "PackagePath": "staticwebassets\\data\\proyectos.gl.json"
     },
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\i18n\\en.json",
@@ -69,8 +89,16 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\image.png",
-      "PackagePath": "staticwebassets\\img\\image.png"
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imgEduComple\\ai-fundamentals-with-ibm-skillsbuild.png",
+      "PackagePath": "staticwebassets\\img\\imgEduComple\\ai-fundamentals-with-ibm-skillsbuild.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imgEduComple\\introduction-to-cybersecurity.png",
+      "PackagePath": "staticwebassets\\img\\imgEduComple\\introduction-to-cybersecurity.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imgEduComple\\introduction-to-data-science.png",
+      "PackagePath": "staticwebassets\\img\\imgEduComple\\introduction-to-data-science.png"
     },
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\index.html",

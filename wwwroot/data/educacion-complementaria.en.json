@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Introduction to Data Science",
+    "entidad": "Cisco",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/9ced8799-9b8d-4e44-a7e2-0431c12297a2/public_url",
+    "imagen": "/img/imgEduComple/introduction-to-data-science.png",
+    "aptitudes": [
+      "Data Analysis",
+      "Data Collection",
+      "Data Validation"
+    ]
+  },
+  {
+    "titulo": "Introduction to Cibersegurity",
+    "entidad": "Cisco",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/9d0009ac-ab19-430c-b6f6-b64eb1a16cf4/public_url",
+    "imagen": "/img/imgEduComple/introduction-to-cybersecurity.png",
+    "aptitudes": [
+      "Cyber Best Practices",
+      "Cybersecurity",
+      "Network Vulnerabilities",
+      "Privacy And Data Confidentiality",
+      "Threat Detection"
+    ]
+  },
+  {
+    "titulo": "Artificial Intelligence Fundamentals",
+    "entidad": "Cisco and IBM SkillsBuild",
+    "fecha": "2026",
+    "url": "https://www.credly.com/badges/624fb854-b439-4f9f-a902-13c8f35e6263/public_url",
+    "imagen": "/img/imgEduComple/ai-fundamentals-with-ibm-skillsbuild.png",
+    "aptitudes": [
+      "Artificial Intelligence (AI)",
+      "Machine Learning (ML)",
+      "Natural Language Processing (NLP)",
+      "AI Ethics",
+      "Artificial Neural Networks"
+    ]
+  }
+]

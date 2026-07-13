@@ -25,7 +25,8 @@ public class LocalizationService
     public async Task InicializarAsync()
     {
         var guardado = await _js.InvokeAsync<string?>("localStorage.getItem", "idioma");
-        var idioma = guardado ?? "es";
+        var idioma = guardado ?? "gl";
+        // guardarEnStorage: false -> al inicializar solo LEEMOS lo guardado, no lo reescribimos
         await CambiarIdiomaAsync(idioma, guardarEnStorage: false);
     }
 

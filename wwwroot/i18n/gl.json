@@ -1,5 +1,9 @@
 {
-  "acerca.tab": "Acerca de",
+  "inicio.subtitulo":"Preséntoche o meu recuncho dixital, é un lugar onde documento o que aprendo e os proxectos que vou construíndo.",
+  "inicio.btnDescargar": "Descargar CV",
+  "inicio.Sigueme": "Sígueme",
+  "inicio.Correo": "Correo",
+  "acerca.tab": "SobreMin.md",
   "proyectos.titulo": "Proxectos",
   "proyectoDetalle.volver": "volver a proxectos",
   "loader.cargando": "Cargando",
@@ -10,9 +14,10 @@
   "acerca.titulo": "Acerca de min",
   "acerca.nombre": "Lois Rodríguez Moimenta",
   "acerca.introTitulo": "Quen son",
-  "acerca.introTexto": "Desenvolvedor web con interese tanto en frontend como en backend, traballando con Astro, Blazor, Next.js e Supabase entre outras tecnoloxías.",
+  "acerca.introTexto": "Ola!\n\n Chámome Lois Rodríguez Moimenta e son unha persoa apaixonada pola tecnoloxía e o desenvolvemento de software. Considérome curioso, responsable e con moitas ganas de seguir aprendendo.\n No meu tempo libre dedícome a aprender novas tecnoloxías e a construír proxectos privados desde cero, para entender ben como funcionan por dentro.\n Os meus coñecementos principais están en Xava, HTML, CSS. Por experiencia profesional adquirín soltura con SwiftUI e UIKit, movéndome con comodidade na contorna de Xcode. A maiores, teño experiencia en Python, JavaScript, Kotlin, C#, SQL e nocións básicas de C, alén de manexo de contornas como Android Studio, Unity, IntelliJ, Visual Studio Code, DBeaver e Microsoft SQL Server. Tamén teño unha base sólida en Git.\n Por conta propia aprendín a manexarme con TypeScript, TailwindCSS e frameworks como Astro, Next.js, Blazor e .NET.",
   "acerca.experienciaTitulo": "Experiencia",
   "acerca.educacionTitulo": "Educación",
   "acerca.educacionComplementariaTitulo": "Educación complementaria",
-  "acerca.skillsTitulo": "Habilidades técnicas"
+  "acerca.skillsTitulo": "Habilidades técnicas",
+  "proyectos.tab":"Proxectos/"
 }

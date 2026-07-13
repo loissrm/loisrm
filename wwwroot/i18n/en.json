@@ -1,5 +1,9 @@
 {
-  "acerca.tab": "About",
+  "inicio.subtitulo":"Let me introduce you to my digital space, it's a place where I document what I'm learning and the projects I'm working on.",
+  "inicio.btnDescargar": "Download CV",
+  "inicio.Sigueme": "Follow me",
+  "inicio.Correo": "Mail",
+  "acerca.tab": "AboutMe.md",
   "proyectos.titulo": "Projects",
   "proyectoDetalle.volver": "back to projects",
   "loader.cargando": "Loading",
@@ -10,9 +14,10 @@
   "acerca.titulo": "About me",
   "acerca.nombre": "Lois Rodríguez Moimenta",
   "acerca.introTitulo": "Who I am",
-  "acerca.introTexto": "Web developer interested in both frontend and backend, working with Astro, Blazor, Next.js and Supabase among other technologies.",
+  "acerca.introTexto": "Hi!\n\n My name is Lois Rodríguez Moimenta, and I am passionate about technology and software development. I consider myself curious and responsible, with a strong desire to keep learning. \n In my free time, I focus on learning new technologies and building personal projects from scratch to gain a deep understanding of how they work under the hood. \n My core expertise lies in Java, HTML, and CSS. Through professional experience, I have become proficient in SwiftUI and UIKit, and I am comfortable working within the Xcode environment. Additionally, I have experience with Python, JavaScript, Kotlin, C#, SQL, and a basic understanding of C, as well as familiarity with environments such as Android Studio, Unity, IntelliJ, Visual Studio Code, DBeaver, and Microsoft SQL Server. I also have a solid foundation in Git.\n On my own, I have learned to work with TypeScript, TailwindCSS, and frameworks such as Astro, Next.js, Blazor, and .NET.",
   "acerca.experienciaTitulo": "Experience",
   "acerca.educacionTitulo": "Education",
   "acerca.educacionComplementariaTitulo": "Additional education",
-  "acerca.skillsTitulo": "Technical skills"
+  "acerca.skillsTitulo": "Technical skills",
+  "proyectos.tab":"Projects/"
 }

@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @using Portfolio.Components
-
+@inject LocalizationService Loc
 @inject IJSRuntime JS
 
 <div class="page @ObtenerClase()">
@@ -24,12 +24,17 @@
 
     private string ObtenerClase() => modoSeleccionado == "Luz" ? string.Empty : "dark-mode";
 
+    protected override async Task OnInitializedAsync()
+    {
+        await Loc.InicializarAsync();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            var module = await JS.InvokeAsync<IJSObjectReference>("import", "./scrollspy.js");
+            // El "?v=" evita que el navegador sirva una versión vieja cacheada del módulo JS
+            var module = await JS.InvokeAsync<IJSObjectReference>("import", $"./scrollspy.js?v={DateTime.UtcNow.Ticks}");
             await module.InvokeVoidAsync("iniciarScrollSpy");
         }
     }

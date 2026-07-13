@@ -1,5 +1,9 @@
 {
-  "acerca.tab": "Acerca de",
+  "inicio.subtitulo":"Te presento mi rincón digital, es un lugar donde documento lo que aprendo y los proyectos que voy construyendo.",
+  "inicio.btnDescargar": "Descargar CV",
+  "inicio.Sigueme": "Sígueme",
+  "inicio.Correo": "Correo",
+  "acerca.tab": "SobreMi.md",
   "proyectos.titulo": "Proyectos",
   "proyectoDetalle.volver": "volver a proyectos",
   "loader.cargando": "Cargando",
@@ -7,12 +11,12 @@
   "contacto.tab": "Contacto",
   "contacto.titulo": "Contacto",
   "contacto.texto": "Si quieres saber algo más de mí, escríbeme y hablamos.",
-  "acerca.titulo": "Acerca de mí",
-  "acerca.nombre": "Lois Rodríguez Moimenta",
+  "acerca.titulo": "Sobre mí",
   "acerca.introTitulo": "Quién soy",
-  "acerca.introTexto": "Desarrollador web con interés tanto en frontend como en backend, trabajando con Astro, Blazor, Next.js y Supabase entre otras tecnologías.",
+  "acerca.introTexto": "¡Hola!\n\n Me llamo Lois Rodríguez Moimenta y soy una persona apasionada por la tecnología y el desarrollo de software. Me considero curioso, responsable y con muchas ganas de seguir aprendiendo.\n En mi tiempo libre me dedico a aprender nuevas tecnologías y a construir proyectos personales desde cero, para entender bien cómo funcionan por dentro.\n Mis conocimientos principales están en Java, HTML, CSS. Por experiencia profesional adquirí soltura con SwiftUI y UIKit, moviéndome con comodidad en el entorno de Xcode. A mayores, tengo experiencia en Python, JavaScript, Kotlin, C#, SQL y nociones básicas de C, además de manejo de entornos como Android Studio, Unity, IntelliJ, Visual Studio Code, DBeaver y Microsoft SQL Server. También tengo una base sólida en Git.\n Por cuenta propia he aprendido a manejarme con TypeScript, TailwindCSS y frameworks como Astro, Next.js, Blazor y .NET.",
   "acerca.experienciaTitulo": "Experiencia",
   "acerca.educacionTitulo": "Educación",
   "acerca.educacionComplementariaTitulo": "Educación complementaria",
-  "acerca.skillsTitulo": "Habilidades técnicas"
+  "acerca.skillsTitulo": "Habilidades técnicas",
+  "proyectos.tab":"Proyectos/"
 }

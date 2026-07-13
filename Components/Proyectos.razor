@@ -1,17 +1,20 @@
+@inherits LocalizedComponentBase
 @inject HttpClient Http
 @using System.Text.Json
+@using System.Linq
+@using Portfolio.Models
 
 <section id="proyectos" class="seccion">
     <div class="file-tab">
-        <span data-i18n="acerca.tab">Proyectos/</span>
+        <span>@Loc.T("proyectos.tab")</span>
         <span class="flechaCerrar">x</span>
     </div>
     <div class="file-panel proyectosContainer reveal">
-        <h1 class="titulo" data-i18n="proyectos.titulo">Proyectos</h1>
+        <h1 class="titulo">@Loc.T("proyectos.titulo")</h1>
         <div class="cards-wrapper">
             @if (proyectos is null)
             {
-                <p>Cargando proyectos...</p>
+                <p>@Loc.T("proyectos.cargando")</p>
             }
             else
             {
@@ -35,7 +38,10 @@
                             <div class="tags">
                                 @foreach (var tech in proyecto.Tecnologias)
                                 {
-                                    <span class="tag tag-@tech.ColorName">@tech.Nombre</span>
+                                    var style = $"background-color: #{tech.colorHex}26; color: #{tech.colorHex};";
+                                    <span class="tag" title="@tech.Nombre" style="@style">
+                                        <p>@tech.Nombre</p>
+                                    </span>
                                 }
                             </div>
 
@@ -55,25 +61,40 @@
         PropertyNameCaseInsensitive = true
     };
 
+    protected override void OnInitialized()
+    {
+        base.OnInitialized(); // ya suscribe StateHasChanged al cambio de idioma
+        Loc.OnIdiomaCambiado += ManejarCambioDeIdioma;
+    }
+
     protected override async Task OnInitializedAsync()
     {
-        using var response = await Http.GetAsync("data/proyectos.json");
-        proyectos = await response.Content.ReadFromJsonAsync<List<Proyecto>>(jsonOptions);
+        await CargarProyectos();
     }
 
-    public class Proyecto
+    private async void ManejarCambioDeIdioma()
     {
-        public string Titulo { get; set; } = string.Empty;
-        public string Descripcion { get; set; } = string.Empty;
-        public string Anio { get; set; } = string.Empty;
-        public string Url { get; set; } = "#";
-        public List<TechTag> Tecnologias { get; set; } = new();
+        await CargarProyectos();
+        StateHasChanged();
     }
 
-    public class TechTag
+    private async Task CargarProyectos()
     {
-        public string Nombre { get; set; } = string.Empty;
-        public string Icono { get; set; } = string.Empty; // ej. "ti-brand-csharp"
-        public string ColorName { get; set; } = "purple"; // purple | teal | coral | pink | blue | green | amber | red | gray
+        var ruta = $"data/proyectos.{Loc.IdiomaActual}.json?v={DateTime.UtcNow.Ticks}";
+        using var respuesta = await Http.GetAsync(ruta);
+        var lista = await respuesta.Content.ReadFromJsonAsync<List<Proyecto>>(jsonOptions);
+
+        // Orden automático: más reciente primero
+        proyectos = lista?
+            .OrderByDescending(p => ParseAnio(p.Anio))
+            .ToList();
+    }
+
+    private static int ParseAnio(string anio) => int.TryParse(anio, out var n) ? n : 0;
+
+    public override void Dispose()
+    {
+        Loc.OnIdiomaCambiado -= ManejarCambioDeIdioma;
+        base.Dispose();
     }
 }
