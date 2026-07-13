@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imagenPerfil\\perfil.jpeg",
+      "PackagePath": "staticwebassets\\img\\imagenPerfil\\perfil.jpeg"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imgEduComple\\ai-fundamentals-with-ibm-skillsbuild.png",
       "PackagePath": "staticwebassets\\img\\imgEduComple\\ai-fundamentals-with-ibm-skillsbuild.png"
     },

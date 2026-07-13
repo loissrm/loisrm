@@ -18,5 +18,9 @@
   "acerca.educacionTitulo": "Educación",
   "acerca.educacionComplementariaTitulo": "Educación complementaria",
   "acerca.skillsTitulo": "Habilidades técnicas",
-  "proyectos.tab":"Proyectos/"
+  "proyectos.tab":"Proyectos/",
+  "navbar.inicio":"Inicio",
+  "navbar.sobremi":"Sobre Mí",
+  "navbar.proyectos":"Proyectos",
+  "navbar.contacto":"Contacto"
 }

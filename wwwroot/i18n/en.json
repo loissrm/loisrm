@@ -19,5 +19,9 @@
   "acerca.educacionTitulo": "Education",
   "acerca.educacionComplementariaTitulo": "Additional education",
   "acerca.skillsTitulo": "Technical skills",
-  "proyectos.tab":"Projects/"
+  "proyectos.tab":"Projects/",
+  "navbar.inicio":"Home",
+  "navbar.sobremi":"About Me",
+  "navbar.proyectos":"Projects",
+  "navbar.contacto":"Contact"
 }

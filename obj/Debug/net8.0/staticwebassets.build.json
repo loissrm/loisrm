@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bCDBbjFupVRx2xfvb0daEQgGuNJkziUlueowiUKy/K4=",
+  "Hash": "e645dpc5qztJISxB4KEZnwrSuvR5H2oPWfVjSqjtfis=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -8166,6 +8166,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imagenPerfil\\perfil.jpeg",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/imagenPerfil/perfil.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagenPerfil\\perfil.jpeg"
     },
     {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imgEduComple\\ai-fundamentals-with-ibm-skillsbuild.png",
