@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e645dpc5qztJISxB4KEZnwrSuvR5H2oPWfVjSqjtfis=",
+  "Hash": "gzRDCLqsMv2R3OyR6FeLjY7FvMfcPie+sNIczqINLSM=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -8242,6 +8242,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\imgEduComple\\introduction-to-data-science.png"
+    },
+    {
+      "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\SVGProximamente\\comming soon.svg",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/SVGProximamente/comming soon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\SVGProximamente\\comming soon.svg"
     },
     {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\index.html",

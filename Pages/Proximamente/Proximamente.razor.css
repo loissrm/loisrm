@@ -1,0 +1,129 @@
+/* --- CONTENEDOR PRINCIPAL --- */
+.error-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 120px 24px 80px 24px; /* Espacio superior para el botón de volver */
+    background: radial-gradient(circle at 10% 20%, rgba(91, 124, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(138, 77, 255, 0.05) 0%, transparent 40%);
+}
+
+/* --- BOTÓN DE VOLVER (Adaptado y posicionado) --- */
+.btn-retro {
+    position: absolute;
+    top: 35px;
+    left: 8%;
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    
+    color: #4a54f1;
+    background: rgba(91, 124, 255, 0.08);
+    border: 1px solid rgba(91, 124, 255, 0.15);
+    
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .02em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(91, 124, 255, 0.08);
+    transition: 
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.btn-retro:hover {
+    transform: translateY(-3px);
+    background: rgba(91, 124, 255, 0.14);
+    border-color: rgba(91, 124, 255, 0.4);
+    box-shadow: 0 12px 30px rgba(91, 124, 255, 0.18);
+}
+
+.btn-retro .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .25s ease;
+}
+
+.btn-retro .btn-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-retro:hover .btn-icon {
+    transform: translateX(-4px);
+}
+
+/* --- CONTENEDOR DE LA IMAGEN --- */
+.error-image-container {
+    width: 100%;
+    max-width: 650px; /* Tamaño máximo ideal en ordenadores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floatAnimation 4s ease-in-out infinite; /* Sutil efecto de flotación */
+}
+
+/* --- LA IMAGEN SVG --- */
+.mi-imagen-svg {
+    width: 100%;
+    height: auto;
+    max-height: 70vh; /* Evita que sea gigante verticalmente */
+    display: block;
+    object-fit: contain;
+}
+
+/* --- ANIMACIÓN FLOTANTE (Le da vida a la ilustración) --- */
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .error-hero {
+        padding-top: 140px; /* Espacio extra arriba en tablets/móviles */
+    }
+
+    .btn-retro {
+        top: 25px;
+        left: 24px;
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+    .error-image-container {
+        max-width: 450px; /* Tamaño controlado en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .error-hero {
+        padding-top: 120px;
+    }
+
+    .btn-retro {
+        top: 20px;
+        left: 16px;
+        font-size: 0.85rem;
+        padding: 8px 14px;
+    }
+
+    .error-image-container {
+        max-width: 320px; /* Evita que toque los bordes de la pantalla en móviles pequeños */
+    }
+}

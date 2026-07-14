@@ -1,7 +1,10 @@
 ﻿@page "/"
 @using Portfolio.Components
+@inject IJSRuntime JS
 
 <PageTitle>Lois Rodríguez Moimenta · Portfolio</PageTitle>
+
+<NavBar />
 
 <div class="secciones">
     <Inicio />
@@ -12,3 +15,15 @@
 
 <Footer/>
 
+
+@code{
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // El "?v=" evita que el navegador sirva una versión vieja cacheada del módulo JS
+            var module = await JS.InvokeAsync<IJSObjectReference>("import", $"./scrollspy.js?v={DateTime.UtcNow.Ticks}");
+            await module.InvokeVoidAsync("iniciarScrollSpy");
+        }
+    }
+}

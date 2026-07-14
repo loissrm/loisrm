@@ -1,26 +1,52 @@
 [
   {
     "titulo": "Blazor Portfolio",
-    "descripcion": "Migration of my personal portfolio to Blazor WebAssembly with a code-editor aesthetic, clean architecture and multi-language support (ES/EN/GL).",
+    "descripcion": "Personal portfolio in .NET 8.0 using Blazor WebAssembly.",
     "anio": "2026",
-    "url": "/proyectos/portfolio-blazor",
+    "url": "https://loisrm.pages.dev",
     "imagen": "",
     "tecnologias": [
-      { "nombre": "C#", "icono": "csharp", "colorHex": "512BD4" },
-      { "nombre": "Blazor", "icono": "blazor", "colorHex": "512BD4" },
-      { "nombre": "CSS", "icono": "css3", "colorHex": "1572B6" }
+      { "nombre": "C#", "colorHex": "512BD4" },
+      { "nombre": "Blazor", "colorHex": "512BD4" },
+      { "nombre": "CSS", "colorHex": "1572B6" }
     ]
   },
-  
+
   {
     "titulo": "Library manager",
-    "descripcion": "Library management application with user roles, book borrowing tracking and ISBN-based search.",
-    "anio": "2024",
-    "url": "/proyectos/gestor-biblioteca",
+    "descripcion": "Library management application with user roles, loan facilities and the ability to search for books by ISBN.",
+    "anio": "2026",
+    "url": "/commingSoon",
     "imagen": "",
     "tecnologias": [
       { "nombre": "Next.js", "icono": "nextdotjs", "colorHex": "000000" },
       { "nombre": "Supabase", "icono": "supabase", "colorHex": "3ECF8E" }
+    ]
+  },
+
+  {
+    "titulo": "AudiHub",
+    "descripcion": "AudiHub is an app designed for hearing centres that aims to digitise and centralise the management of hearing tests, medical appointments and reminders.",
+    "anio": "2025",
+    "url": "/proyecto/audihub",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "Kotlin", "colorHex": "7F52FF" },
+      { "nombre": "HTML", "colorHex": "E34F26" },
+      { "nombre": "CSS", "colorHex": "1572B6" },
+      { "nombre": "JavaScript", "colorHex": "F7DF1E" }
+    ]
+  },
+
+  {
+    "titulo": "Frog Jumping",
+    "descripcion": "It is a platform game based on Super Mario Bros, where the aim is to complete the levels by reaching the end of each one.",
+    "anio": "2025",
+    "url": "https://github.com/loissrm/DAM_UF2_Proyecto/tree/master",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "C#", "colorHex": "390090" },
+      { "nombre": "Unity", "colorHex": "222222" }
     ]
   }
 ]

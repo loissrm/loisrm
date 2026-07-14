@@ -792,7 +792,9 @@ bosy.dark-mode::before {
 .proj-card .tags {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
+    margin-top: auto;
 }
 
 .proj-card .tag {

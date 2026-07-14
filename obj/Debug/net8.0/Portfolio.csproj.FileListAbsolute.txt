@@ -1029,3 +1029,5 @@ C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.d
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\refint\Portfolio.dll
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.pdb
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\ref\Portfolio.dll
+C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\scopedcss\Pages\Proyectos\AudiHub\AudiHub.razor.rz.scp.css
+C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\scopedcss\Pages\Proximamente\Proximamente.razor.rz.scp.css

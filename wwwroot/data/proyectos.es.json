@@ -1,9 +1,9 @@
 [
   {
     "titulo": "Portfolio Blazor",
-    "descripcion": "Migración de mi portfolio personal a Blazor WebAssembly con estética de editor de código, arquitectura limpia y soporte multi-idioma (ES/EN/GL).",
+    "descripcion": "Portfolio personal en .NET 8.0 con Blazor WebAssembly.",
     "anio": "2026",
-    "url": "/proyectos/portfolio-blazor",
+    "url": "https://loisrm.pages.dev",
     "imagen": "",
     "tecnologias": [
       { "nombre": "C#", "colorHex": "512BD4" },
@@ -15,12 +15,38 @@
   {
     "titulo": "Gestor de biblioteca",
     "descripcion": "Aplicación de gestión de biblioteca con roles de usuario, préstamos y búsqueda de libros por ISBN.",
-    "anio": "2024",
-    "url": "/proyectos/gestor-biblioteca",
+    "anio": "2026",
+    "url": "/commingSoon",
     "imagen": "",
     "tecnologias": [
       { "nombre": "Next.js", "icono": "nextdotjs", "colorHex": "000000" },
       { "nombre": "Supabase", "icono": "supabase", "colorHex": "3ECF8E" }
+    ]
+  },
+
+  {
+    "titulo": "AudiHub",
+    "descripcion": "AudiHub es una aplicación orientada a centros auditivos que busca digitalizar y centralizar la gestión de audiometrías, citas médicas y recordatorios.",
+    "anio": "2025",
+    "url": "/proyecto/audihub",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "Kotlin", "colorHex": "7F52FF" },
+      { "nombre": "HTML", "colorHex": "E34F26" },
+      { "nombre": "CSS", "colorHex": "1572B6" },
+      { "nombre": "JavaScript", "colorHex": "F7DF1E" }
+    ]
+  },
+
+  {
+    "titulo": "Frog Jumping",
+    "descripcion": "Es un juego de plataformas basado en Super Mario Bros, donde el objetivo es pasarse los niveles llegando al final del mismo.",
+    "anio": "2025",
+    "url": "https://github.com/loissrm/DAM_UF2_Proyecto/tree/master",
+    "imagen": "",
+    "tecnologias": [
+      { "nombre": "C#", "colorHex": "390090" },
+      { "nombre": "Unity", "colorHex": "222222" }
     ]
   }
 ]

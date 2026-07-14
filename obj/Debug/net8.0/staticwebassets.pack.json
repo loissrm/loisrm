@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\SVGProximamente\\comming soon.svg",
+      "PackagePath": "staticwebassets\\img\\SVGProximamente\\comming soon.svg"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\imagenPerfil\\perfil.jpeg",
       "PackagePath": "staticwebassets\\img\\imagenPerfil\\perfil.jpeg"
     },
