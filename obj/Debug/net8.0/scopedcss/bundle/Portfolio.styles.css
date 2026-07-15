@@ -207,8 +207,99 @@ main[b-xn2l5aia1e] {
     }
 }
 /* /Pages/Proyectos/AudiHub/AudiHub.razor.rz.scp.css */
-/* --- CONFIGURACIÓN BASE --- */
+.error-hero[b-izafudrlka] {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --- CONTENEDOR DE LA IMAGEN --- */
+.error-image-container[b-izafudrlka] {
+    width: 100%;
+    max-width: 650px; /* Tamaño máximo ideal en ordenadores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floatAnimation-b-izafudrlka 4s ease-in-out infinite; /* Sutil efecto de flotación */
+}
+
+/* --- LA IMAGEN SVG --- */
+.mi-imagen-svg[b-izafudrlka] {
+    width: 100%;
+    height: auto;
+    max-height: 70vh; /* Evita que sea gigante verticalmente */
+    display: block;
+    object-fit: contain;
+}
+
+/* --- ANIMACIÓN FLOTANTE (Le da vida a la ilustración) --- */
+@keyframes floatAnimation-b-izafudrlka {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .error-hero[b-izafudrlka] {
+        padding-top: 140px; /* Espacio extra arriba en tablets/móviles */
+    }
+
+
+    .error-image-container[b-izafudrlka] {
+        max-width: 450px; /* Tamaño controlado en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .error-hero[b-izafudrlka] {
+        padding-top: 120px;
+    }
+
+    .error-image-container[b-izafudrlka] {
+        max-width: 320px; /* Evita que toque los bordes de la pantalla en móviles pequeños */
+    }
+}
+
+
+
+/* --- CONFIGURACIÓN DE VARIABLES POR PROYECTO (TU PSEUDO-ROOT) --- */
 .hero[b-izafudrlka] {
+    /* 1. Botón Volver */
+    --btnVolver: #4a54f1;
+    --btnVolverBg: rgba(91, 124, 255, 0.08);
+    --btnVolverBorder: rgba(91, 124, 255, 0.15);
+    --btnVolverBgHover: rgba(91, 124, 255, 0.14);
+    --btnVolverBorderHover: rgba(91, 124, 255, 0.4);
+    --btnVolverShadowHover: rgba(91, 124, 255, 0.18);
+
+
+    /* 3. Colores de Marca y Elementos de Acción */
+    --color-brand: #5b7cff;
+    --color-brand-shadow: rgba(91, 124, 255, 0.35);
+    
+    /* 4. Botones Secundarios */
+    --btnSecundarioText: #24292e;
+    --btnSecundarioBg: rgba(0, 0, 0, 0.03);
+    --btnSecundarioBorder: rgba(40, 45, 51, 0.2);
+    --btnSecundarioBgHover: rgba(0, 0, 0, 0.08);
+
+    /* 5. Efectos de Fondo (Blobs) */
+    --blob1-color: #5b7cff;
+    --blob2-color: #8a4dff;
+    --blob3-color: #00bcd4;
+
+    /* 6. Tarjeta de Imagen del Proyecto */
+    --card-bg: #111111;
+    --card-border: rgba(0, 0, 0, 0.05);
+    --card-shadow: rgba(0, 0, 0, 0.12);
+
+    /* --- ESTILOS BASE DEL HERO --- */
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -216,9 +307,41 @@ main[b-xn2l5aia1e] {
     justify-content: center;
     overflow-x: hidden; 
     padding: 120px 8% 100px 8%; 
+    background-color: transparent;
+    color: var(--text-primary);
 }
 
-/* --- BOTÓN VOLVER (Ajuste adaptativo y z-index) --- */
+/* --- MODO OSCURO DEL PROYECTO (Aislamiento de Blazor) --- */
+[b-izafudrlka] .dark-mode .hero, 
+.page.dark-mode .hero[b-izafudrlka] {
+    /* 1. Botón Volver (Modo Noche) */
+    --btnVolver: #a17fff;
+    --btnVolverBg: rgba(138, 77, 255, 0.15);
+    --btnVolverBorder: rgba(138, 77, 255, 0.3);
+    --btnVolverBgHover: rgba(138, 77, 255, 0.25);
+    --btnVolverBorderHover: rgba(138, 77, 255, 0.6);
+    --btnVolverShadowHover: rgba(138, 77, 255, 0.25);
+
+
+
+    /* 4. Botones Secundarios (Modo Noche) */
+    --btnSecundarioText: #f8f9fa;
+    --btnSecundarioBg: rgba(255, 255, 255, 0.05);
+    --btnSecundarioBorder: rgba(255, 255, 255, 0.15);
+    --btnSecundarioBgHover: rgba(255, 255, 255, 0.1);
+
+    /* 5. Efectos de Fondo (Atenuados o cambiados para que no molesten en oscuro) */
+    --blob1-color: #3b4eff;
+    --blob2-color: #5a22d4;
+    --blob3-color: #008ba3;
+
+    /* 6. Tarjeta de Imagen */
+    --card-bg: #1e1e1e;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* --- BOTÓN VOLVER --- */
 .btn-retro[b-izafudrlka] {
     position: absolute;
     top: 35px;
@@ -231,16 +354,16 @@ main[b-xn2l5aia1e] {
     border-radius: 999px;
     text-decoration: none;
     
-    color: #4a54f1;
-    background: rgba(91, 124, 255, 0.08);
-    border: 1px solid rgba(91, 124, 255, 0.15);
+    color: var(--btnVolver);
+    background: var(--btnVolverBg);
+    border: 1px solid var(--btnVolverBorder);
     
     font-weight: 600;
     font-size: .95rem;
     letter-spacing: .02em;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 24px rgba(91, 124, 255, 0.08);
+    box-shadow: 0 8px 24px var(--btnVolverBg);
     transition: 
         transform .25s ease,
         background .25s ease,
@@ -250,9 +373,9 @@ main[b-xn2l5aia1e] {
 
 .btn-retro:hover[b-izafudrlka] {
     transform: translateY(-3px);
-    background: rgba(91, 124, 255, 0.14);
-    border-color: rgba(91, 124, 255, 0.4);
-    box-shadow: 0 12px 30px rgba(91, 124, 255, 0.18);
+    background: var(--btnVolverBgHover);
+    border-color: var(--btnVolverBorderHover);
+    box-shadow: 0 12px 30px var(--btnVolverShadowHover);
 }
 
 .btn-retro:active[b-izafudrlka] {
@@ -294,7 +417,7 @@ main[b-xn2l5aia1e] {
 .blob1[b-izafudrlka] {
     width: min(500px, 80vw);
     height: min(500px, 80vw);
-    background: #5b7cff;
+    background: var(--blob1-color);
     top: -120px;
     left: -120px;
 }
@@ -302,7 +425,7 @@ main[b-xn2l5aia1e] {
 .blob2[b-izafudrlka] {
     width: min(450px, 70vw);
     height: min(450px, 70vw);
-    background: #8a4dff;
+    background: var(--blob2-color);
     right: -100px;
     top: 120px;
 }
@@ -310,12 +433,12 @@ main[b-xn2l5aia1e] {
 .blob3[b-izafudrlka] {
     width: min(550px, 90vw);
     height: min(550px, 90vw);
-    background: #00bcd4;
+    background: var(--blob3-color);
     bottom: -250px;
     left: 40%;
 }
 
-/* --- CUADRÍCULA PRINCIPAL (GRID RESPONSIVE) --- */
+/* --- CUADRÍCULA PRINCIPAL --- */
 .hero-content[b-izafudrlka] {
     position: relative;
     z-index: 2;
@@ -340,14 +463,14 @@ main[b-xn2l5aia1e] {
 }
 
 .hero h1[b-izafudrlka] {
-    font-size: clamp(2.5rem, 4.5vw, 5rem); /* Se autoajusta según el tamaño de pantalla */
+    font-size: clamp(2.5rem, 4.5vw, 5rem);
     line-height: 1.1;
     margin-bottom: 25px;
     font-weight: 800;
 }
 
 .hero h1 span[b-izafudrlka] {
-    color: #5b7cff;
+    color: var(--color-brand);
 }
 
 .hero-description[b-izafudrlka] {
@@ -412,7 +535,7 @@ main[b-xn2l5aia1e] {
     border: 1px solid rgba(61, 220, 132, 0.15);
 }
 
-/* --- BOTONES DE ACCIÓN (Flexibles) --- */
+/* --- BOTONES DE ACCIÓN --- */
 .hero-buttons[b-izafudrlka] {
     display: flex;
     flex-wrap: wrap;
@@ -433,23 +556,23 @@ main[b-xn2l5aia1e] {
 }
 
 .btn-primary[b-izafudrlka] {
-    background: #5b7cff;
-    color: white;
+    background: var(--color-brand);
+    color: #ffffff;
 }
 
 .btn-primary:hover[b-izafudrlka] {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(91, 124, 255, .35);
+    box-shadow: 0 20px 40px var(--color-brand-shadow);
 }
 
 .btn-secondary[b-izafudrlka] {
-    border: 1px solid rgba(40, 45, 51, 0.2);
-    color: #24292e;
-    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--btnSecundarioBorder);
+    color: var(--btnSecundarioText);
+    background: var(--btnSecundarioBg);
 }
 
 .btn-secondary:hover[b-izafudrlka] {
-    background: rgba(0, 0, 0, 0.08);
+    background: var(--btnSecundarioBgHover);
     transform: translateY(-3px);
 }
 
@@ -459,7 +582,7 @@ main[b-xn2l5aia1e] {
     flex-shrink: 0;
 }
 
-/* --- IMAGEN DEL PROYECTO (Responsiva) --- */
+/* --- IMAGEN DEL PROYECTO --- */
 .hero-image[b-izafudrlka] {
     display: flex;
     justify-content: center;
@@ -472,9 +595,9 @@ main[b-xn2l5aia1e] {
     max-width: 550px;
     border-radius: 24px;
     overflow: hidden;
-    background: #111;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, .12);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: var(--card-bg);
+    box-shadow: 0 30px 60px var(--card-shadow);
+    border: 1px solid var(--card-border);
 }
 
 .image-card img[b-izafudrlka] {
@@ -500,14 +623,15 @@ main[b-xn2l5aia1e] {
 .hero-scroll span[b-izafudrlka] {
     font-size: 0.8rem;
     letter-spacing: 0.05em;
-    color: #2b303b;
+    color: var(--text-secondary);
     font-weight: 600;
 }
 
 .scroll-indicator[b-izafudrlka] {
     width: 26px;
     height: 44px;
-    border: 2px solid rgba(43, 48, 59, 0.25);
+    border: 2px solid var(--text-secondary);
+    opacity: 0.5;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -517,7 +641,7 @@ main[b-xn2l5aia1e] {
     width: 4px;
     height: 8px;
     border-radius: 20px;
-    background: #2b303b;
+    background: var(--text-secondary);
     margin-top: 8px;
     animation: scrollAnimation-b-izafudrlka 2s infinite;
 }
@@ -536,8 +660,7 @@ main[b-xn2l5aia1e] {
     }
 }
 
-
-
+/* --- MEDIA QUERIES --- */
 @media(max-width: 1024px) {
     .hero[b-izafudrlka] {
         padding-top: 140px; 
@@ -611,7 +734,6 @@ main[b-xn2l5aia1e] {
         width: 100%; 
         padding: 14px 20px;
     }
-
 
     .hero-scroll[b-izafudrlka] {
         bottom: 15px;
