@@ -208,7 +208,7 @@ main[b-xn2l5aia1e] {
 }
 /* /Pages/Proyectos/AudiHub/AudiHub.razor.rz.scp.css */
 .error-hero[b-izafudrlka] {
-
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,7 +591,7 @@ main[b-xn2l5aia1e] {
 }
 
 .image-card[b-izafudrlka] {
-    width: 100%;
+    width: 60%;
     max-width: 550px;
     border-radius: 24px;
     overflow: hidden;

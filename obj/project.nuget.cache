@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Tryfqsrai+c=",
+  "dgSpecHash": "U9JzVJu5L+0=",
   "success": true,
   "projectFilePath": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\Portfolio.csproj",
   "expectedPackageFiles": [
@@ -28,10 +28,10 @@
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.jsinterop\\8.0.28\\microsoft.jsinterop.8.0.28.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.28\\microsoft.jsinterop.webassembly.8.0.28.nupkg.sha512",
-    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.28\\microsoft.net.illink.tasks.8.0.28.nupkg.sha512",
-    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.28\\microsoft.net.sdk.webassembly.pack.8.0.28.nupkg.sha512",
+    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.29\\microsoft.net.illink.tasks.8.0.29.nupkg.sha512",
+    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.29\\microsoft.net.sdk.webassembly.pack.8.0.29.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.28\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.28.nupkg.sha512"
+    "C:\\Users\\loisr\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.29\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.29.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,5 +1,5 @@
 .error-hero {
-
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,7 +382,7 @@
 }
 
 .image-card {
-    width: 100%;
+    width: 60%;
     max-width: 550px;
     border-radius: 24px;
     overflow: hidden;
