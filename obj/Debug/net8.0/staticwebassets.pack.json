@@ -109,6 +109,10 @@
       "PackagePath": "staticwebassets\\img\\imgEduComple\\introduction-to-data-science.png"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\AudiHub\\DeseñoLogoCompleto.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\AudiHub\\DeseñoLogoCompleto.png"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

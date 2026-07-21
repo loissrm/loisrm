@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DZqXX/IVUmlHhA7A2YzztCNKRq0E7uIIlfvzpq8KTt4=",
+  "Hash": "9LxoZ+Sra9brRJz8ThU+XNhY4Ys2fB1YtTqeCRbfxDM=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -8242,6 +8242,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\imgEduComple\\introduction-to-data-science.png"
+    },
+    {
+      "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\AudiHub\\DeseñoLogoCompleto.png",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/proyectos/AudiHub/DeseñoLogoCompleto.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\proyectos\\AudiHub\\DeseñoLogoCompleto.png"
     },
     {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\SVGProximamente\\comming soon.svg",
