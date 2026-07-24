@@ -1,65 +1,4 @@
-.error-hero {
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* --- CONTENEDOR DE LA IMAGEN --- */
-.error-image-container {
-    width: 100%;
-    max-width: 650px; /* Tamaño máximo ideal en ordenadores */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: floatAnimation 4s ease-in-out infinite; /* Sutil efecto de flotación */
-}
-
-/* --- LA IMAGEN SVG --- */
-.mi-imagen-svg {
-    width: 100%;
-    height: auto;
-    max-height: 70vh; /* Evita que sea gigante verticalmente */
-    display: block;
-    object-fit: contain;
-}
-
-/* --- ANIMACIÓN FLOTANTE (Le da vida a la ilustración) --- */
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-    .error-hero {
-        padding-top: 140px; /* Espacio extra arriba en tablets/móviles */
-    }
-
-
-    .error-image-container {
-        max-width: 450px; /* Tamaño controlado en tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .error-hero {
-        padding-top: 120px;
-    }
-
-    .error-image-container {
-        max-width: 320px; /* Evita que toque los bordes de la pantalla en móviles pequeños */
-    }
-}
-
-
-
-/* --- CONFIGURACIÓN DE VARIABLES POR PROYECTO (TU PSEUDO-ROOT) --- */
+/* --- CONFIGURACIÓN DE VARIABLES POR PROYECTO (PSEUDO-ROOT) --- */
 .hero {
     /* 1. Botón Volver */
     --btnVolver: #4a54f1;
@@ -69,9 +8,8 @@
     --btnVolverBorderHover: rgba(91, 124, 255, 0.4);
     --btnVolverShadowHover: rgba(91, 124, 255, 0.18);
 
-
     /* 3. Colores de Marca y Elementos de Acción */
-    --color-brand: #5b7cff;
+    --color-brand: #0f376a;
     --color-brand-shadow: rgba(91, 124, 255, 0.35);
     
     /* 4. Botones Secundarios */
@@ -81,9 +19,9 @@
     --btnSecundarioBgHover: rgba(0, 0, 0, 0.08);
 
     /* 5. Efectos de Fondo (Blobs) */
-    --blob1-color: #5b7cff;
-    --blob2-color: #8a4dff;
-    --blob3-color: #00bcd4;
+    --blob3-color: #e8f2fc;
+    --blob2-color: #0f376a;
+    --blob1-color: #002a49;
 
     /* 6. Tarjeta de Imagen del Proyecto */
     --card-bg: #111111;
@@ -99,34 +37,37 @@
     overflow-x: hidden; 
     padding: 120px 8% 100px 8%; 
     background-color: transparent;
-    color: var(--text-primary);
+    color: var(--text-primary, #222);
 }
 
 /* --- MODO OSCURO DEL PROYECTO (Aislamiento de Blazor) --- */
+/* Paleta derivada de los colores del modo claro (misma familia azul/índigo) */
 ::deep .dark-mode .hero, 
 .page.dark-mode .hero {
-    /* 1. Botón Volver (Modo Noche) */
-    --btnVolver: #a17fff;
-    --btnVolverBg: rgba(138, 77, 255, 0.15);
-    --btnVolverBorder: rgba(138, 77, 255, 0.3);
-    --btnVolverBgHover: rgba(138, 77, 255, 0.25);
-    --btnVolverBorderHover: rgba(138, 77, 255, 0.6);
-    --btnVolverShadowHover: rgba(138, 77, 255, 0.25);
+    /* Botón Volver: mismo índigo del modo claro, aclarado para contraste sobre fondo oscuro */
+    --btnVolver: #7d8cff;
+    --btnVolverBg: rgba(91, 124, 255, 0.15);
+    --btnVolverBorder: rgba(91, 124, 255, 0.3);
+    --btnVolverBgHover: rgba(91, 124, 255, 0.25);
+    --btnVolverBorderHover: rgba(91, 124, 255, 0.6);
+    --btnVolverShadowHover: rgba(91, 124, 255, 0.3);
 
+    /* Marca: se aclara la marina #0f376a para que funcione como acento sobre fondo oscuro */
+    --color-brand: #4a8fe0;
+    --color-brand-shadow: rgba(74, 143, 224, 0.4);
 
-
-    /* 4. Botones Secundarios (Modo Noche) */
+    /* Botón secundario: inversión de texto/fondo para fondo oscuro */
     --btnSecundarioText: #f8f9fa;
     --btnSecundarioBg: rgba(255, 255, 255, 0.05);
     --btnSecundarioBorder: rgba(255, 255, 255, 0.15);
     --btnSecundarioBgHover: rgba(255, 255, 255, 0.1);
 
-    /* 5. Efectos de Fondo (Atenuados o cambiados para que no molesten en oscuro) */
-    --blob1-color: #3b4eff;
-    --blob2-color: #5a22d4;
-    --blob3-color: #008ba3;
+    /* Blobs: misma familia azul/marina del modo claro, aclarados para que brillen sobre negro */
+    --blob1-color: #1560b0;
+    --blob2-color: #2f7fd4;
+    --blob3-color: #cfe6fb;
 
-    /* 6. Tarjeta de Imagen */
+    /* Tarjeta de imagen: ligeramente más clara que el fondo de página para diferenciarse */
     --card-bg: #1e1e1e;
     --card-border: rgba(255, 255, 255, 0.08);
     --card-shadow: rgba(0, 0, 0, 0.4);
@@ -144,22 +85,16 @@
     padding: 12px 22px;
     border-radius: 999px;
     text-decoration: none;
-    
     color: var(--btnVolver);
     background: var(--btnVolverBg);
     border: 1px solid var(--btnVolverBorder);
-    
     font-weight: 600;
     font-size: .95rem;
     letter-spacing: .02em;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 24px var(--btnVolverBg);
-    transition: 
-        transform .25s ease,
-        background .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
+    transition: transform .25s ease, background .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
 .btn-retro:hover {
@@ -250,7 +185,7 @@
     font-size: .85rem;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: var(--text-secondary);
+    color: var(--text-secondary, #666);
 }
 
 .hero h1 {
@@ -260,15 +195,20 @@
     font-weight: 800;
 }
 
+.hero h1  {
+    color: var(--color-brand);
+}
+
 .hero h1 span {
     color: var(--color-brand);
 }
 
 .hero-description {
+    white-space: pre-line;
     max-width: 620px;
     font-size: clamp(1rem, 1.1vw, 1.15rem);
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: var(--text-secondary, #666);
     margin-bottom: 30px;
 }
 
@@ -298,13 +238,13 @@
 
 .tech-html {
     background: rgba(228, 79, 38, 0.08) !important;
-    color: #e44f26 !important;
+    color: #E44D26 !important;
     border: 1px solid rgba(228, 79, 38, 0.15);
 }
 
 .tech-css {
     background: rgba(21, 114, 182, 0.08) !important;
-    color: #1572b6 !important;
+    color: #1572B6 !important;
     border: 1px solid rgba(21, 114, 182, 0.15);
 }
 
@@ -316,14 +256,14 @@
 
 .tech-firebase {
     background: rgba(245, 127, 23, 0.08) !important;
-    color: #e65100 !important;
+    color: #ffa000 !important;
     border: 1px solid rgba(245, 127, 23, 0.15);
 }
 
 .tech-android {
     background: rgba(61, 220, 132, 0.08) !important;
     color: #0f9d58 !important;
-    border: 1px solid rgba(61, 220, 132, 0.15);
+    border: 1px solid rgba(52, 197, 117, 0.15);
 }
 
 /* --- BOTONES DE ACCIÓN --- */
@@ -382,7 +322,7 @@
 }
 
 .image-card {
-    width: 60%;
+    width: 85%;
     max-width: 550px;
     border-radius: 24px;
     overflow: hidden;
@@ -414,14 +354,14 @@
 .hero-scroll span {
     font-size: 0.8rem;
     letter-spacing: 0.05em;
-    color: var(--text-secondary);
+    color: var(--text-secondary, #666);
     font-weight: 600;
 }
 
 .scroll-indicator {
     width: 26px;
     height: 44px;
-    border: 2px solid var(--text-secondary);
+    border: 2px solid var(--text-secondary, #666);
     opacity: 0.5;
     border-radius: 30px;
     display: flex;
@@ -432,118 +372,574 @@
     width: 4px;
     height: 8px;
     border-radius: 20px;
-    background: var(--text-secondary);
+    background: var(--text-secondary, #666);
     margin-top: 8px;
     animation: scrollAnimation 2s infinite;
 }
 
 @keyframes scrollAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(0);
-    }
-    40% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(14px);
-    }
+    0% { opacity: 0; transform: translateY(0); }
+    40% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(14px); }
+}
+
+/* ==================== ESTILOS SECCIONES DETALLADAS ==================== */
+.contenedor-secciones {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 8% 100px 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.details-section {
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #c0d8f6;
+    background: #e8f2fc;
+    color: var(--color-brand, #0f376a);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--text-secondary, #666);
+    font-size: 1.05rem;
+}
+
+/* --- JUSTIFICACIÓN (GRID) --- */
+.justification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.descard{
+    white-space: pre-line;
+}
+
+::deep .dark-mode .info-card,
+.page.dark-mode .info-card {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-brand, #0f376a);
+    box-shadow: 0 15px 35px rgba(91, 124, 255, 0.1);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    border: 1px solid #c0d8f6;
+    background: #e8f2fc;
+    color: var(--color-brand, #0f376a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info-card:nth-of-type(3) svg {
+  width: 32px; 
+  height: 32px; 
+}
+
+.info-card:nth-of-type(4) svg {
+  width: 30px; 
+  height: 30px; 
+}
+
+
+.card-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.info-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: var(--text-secondary, #666);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* --- CONTENEDOR ZIG-ZAG --- */
+.funcionalidades {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+
+/* Línea vertical central que conecta los bloques */
+.funcionalidades::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--color-brand, #0f376a),
+        transparent
+    );
+    opacity: 0.5;
+    transform: translateX(-50%);
+}
+
+/* --- ESTILO BASE DE LOS BLOQUES --- */
+.funcionalidades-generales,
+.funcionalidades-web,
+.funcionalidades-movil {
+    width: 45%;
+    position: relative;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Modo Oscuro */
+::deep .dark-mode .funcionalidades-generales,
+::deep .dark-mode .funcionalidades-web,
+::deep .dark-mode .funcionalidades-movil,
+.page.dark-mode .funcionalidades-generales,
+.page.dark-mode .funcionalidades-web,
+.page.dark-mode .funcionalidades-movil {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Efecto Hover */
+.funcionalidades-generales:hover,
+.funcionalidades-web:hover,
+.funcionalidades-movil:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-brand, #0f376a);
+}
+
+/* --- ALINEACIÓN ALTERNADA (ZIG-ZAG) --- */
+.funcionalidades-generales {
+    align-self: flex-end;
+    text-align: left;
+}
+
+.funcionalidades-web {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.funcionalidades-movil {
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* --- TÍTULOS E LISTAS CON PUNTOS (UL) --- */
+.funcionalidades h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: var(--text-primary, #222);
+}
+
+::deep .dark-mode .funcionalidades h3,
+.page.dark-mode .funcionalidades h3 {
+    color: #ffffff;
+}
+
+.funcionalidades li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.funcionalidades ul {
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary, #666);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+::deep .dark-mode .funcionalidades ul,
+.page.dark-mode .funcionalidades ul {
+    color: var(--text-secondary, #aaa);
+}
+
+
+
+/* Punto decorativo a la izquierda para el bloque alineado a la izquierda */
+.funcionalidades-web ul::before,.funcionalidades-generales ul::before,
+.funcionalidades-movil ul::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-brand, #0f376a);
+    flex-shrink: 0;
+}
+
+
+/* --- PARTE WEB & MÓVIL --- */
+.ecosystem-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.platform-card {
+    padding: 35px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+::deep .dark-mode .platform-card,
+.page.dark-mode .platform-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.platform-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.platform-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    border: 1px solid #c0d8f6;
+    background: var(--color-brand, #e8f2fc);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-icon svg {
+    color: #0f376a;
+    width: 26px;
+    height: 26px;
+}
+
+.platform-header h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.tech-stack-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary, #666);
+    font-weight: 600;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text-secondary, #666);
+    line-height: 1.5;
+}
+
+.feature-list li svg {
+    width: 18px;
+    height: 18px;
+    color: #0f9d58;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* HUB CONNECTOR */
+.hub-connector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hub-line {
+    width: 40px;
+    height: 2px;
+    background: rgba(245, 127, 23, 0.3);
+}
+
+.hub-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 18px;
+    border-radius: 16px;
+    background: rgba(245, 127, 23, 0.1);
+    color: #e65100;
+    border: 1px solid rgba(245, 127, 23, 0.2);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hub-badge svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- DISEÑO Y MANUAL DE PROYECTO --- */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.doc-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+::deep .dark-mode .doc-card,
+.page.dark-mode .doc-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+
+
+.doc-badge {
+    align-self: flex-start;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-secondary, #666);
+}
+
+.doc-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.doc-card p {
+    color: var(--text-secondary, #666);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.doc-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.doc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #c0d8f6;
+    background: #e8f2fc;
+    color: var(--text-primary, #0f376a);
+    transition: all 0.3s ease;
+}
+
+::deep .dark-mode .doc-btn,
+.page.dark-mode .doc-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.doc-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #c0d8f6;
+    color: #0f376a;
+    background-color: #e8f2fc;
+}
+
+
+.doc-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* --- CONTENEDOR Y BOTÓN GITHUB --- */
+.buttongithub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.btn-github-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 26px;
+    border-radius: 12px;
+    background-color: #24292e;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-github-main svg{
+    width: 24px;
+    height: 24px;
+}
+
+.btn-github-main:hover {
+    background-color: #1a1e22;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+}
+
+.btn-github-main:active {
+    transform: translateY(0);
+}
+
+.btn-github-main svg {
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.btn-github-main:hover svg {
+    transform: scale(1.1);
+}
+
+
+/* Adaptación para Dark Mode */
+::deep .dark-mode .btn-github-main,
+.page.dark-mode .btn-github-main {
+    background-color: #f0f6fc;
+    color: #0d1117;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+::deep .dark-mode .btn-github-main:hover,
+.page.dark-mode .btn-github-main:hover {
+    background-color: #ffffff;
+    color: #0d1117;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
 }
 
 /* --- MEDIA QUERIES --- */
 @media(max-width: 1024px) {
-    .hero {
-        padding-top: 140px; 
-    }
-    .hero-content {
-        gap: 40px;
-    }
+    .hero { padding-top: 140px; }
+    .hero-content { gap: 40px; }
+    .ecosystem-container { grid-template-columns: 1fr; }
+    .hub-connector { flex-direction: row; margin: 10px 0; }
+    .hub-line { width: 40px; height: 2px; }
 }
 
 @media(max-width: 900px) {
-    .hero {
-        padding: 140px 24px 140px 24px; 
+    .hero { padding: 140px 24px 140px 24px; }
+    .btn-retro { top: 25px; left: 24px; }
+    .hero-content { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .hero-description { margin: 0 auto 30px; }
+    .hero-techs, .hero-buttons { justify-content: center; }
+    .hero-scroll { bottom: 20px; }
+    .hub-connector {flex-direction: column;}
+    .hub-line {width: 2px; height: 40px;}
+
+    .funcionalidades::before {
+        left: 0;
     }
 
-    .btn-retro {
-        top: 25px;
-        left: 24px;
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr; 
-        gap: 40px;
-        text-align: center;
-    }
-
-    .hero-description {
-        margin: 0 auto 30px;
-    }
-
-    .hero-techs, .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-scroll {
-        bottom: 20px;
-    }
-    
-    .scroll-indicator {
-        width: 24px;
-        height: 40px;
+    .funcionalidades-generales,
+    .funcionalidades-web,
+    .funcionalidades-movil {
+        width: 100%;
+        align-self: stretch;
+        text-align: left;
     }
 }
 
 @media(max-width: 700px) {
-    .hero {
-        padding: 130px 16px 120px 16px; 
-    }
-
-    .btn-retro {
-        top: 20px;
-        left: 16px;
-        font-size: 0.70rem;
-        padding: 10px 18px;
-    }
-
-    .hero h1 {
-        margin-bottom: 15px;
-    }
-
-    .hero-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    .hero-buttons {
-        flex-direction: column; 
-        width: 100%;
-    }
-
-    .btn-primary, .btn-secondary {
-        width: 100%; 
-        padding: 14px 20px;
-    }
-
-    .hero-scroll {
-        bottom: 15px;
-        gap: 8px;
-    }
-
-    .hero-scroll span {
-        font-size: 0.75rem;
-    }
-
-    .scroll-indicator {
-        width: 20px;
-        height: 34px;
-        border-width: 1.5px;
-    }
-
-    .scroll-indicator div {
-        width: 3px;
-        height: 6px;
-        margin-top: 6px;
-    }
+    .hero { padding: 130px 16px 120px 16px; }
+    .btn-retro { top: 20px; left: 16px; font-size: 0.70rem; padding: 10px 18px; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .btn-primary, .btn-secondary { width: 100%; padding: 14px 20px; }
+    .project-details-container { padding-left: 5%; padding-right: 5%; gap: 60px; }
 }

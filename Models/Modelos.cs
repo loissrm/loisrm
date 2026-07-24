@@ -49,3 +49,4 @@ public class TechTag
     [JsonPropertyName("colorHex")]
     public string colorHex { get; set; } = string.Empty; // el <svg>...</svg> completo, pegado directamente
 }
+

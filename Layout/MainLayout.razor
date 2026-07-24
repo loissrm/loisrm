@@ -2,31 +2,44 @@
 @using Portfolio.Components
 @inject LocalizationService Loc
 
+@if (cargando)
+{
 
-<div class="page @ObtenerClase()">
-    <ControlesTop OnThemeChanged="CambiarTema" />
+    <div></div>
+}
+else
+{
+    <div class="page @ObtenerClase()">
+        <ControlesTop OnThemeChanged="CambiarTema" />
 
-<main id="portfolio" class="portfolio" >
-    @Body
-</main>
-</div>
-
+        <main id="portfolio" class="portfolio">
+            @Body
+        </main>
+    </div>
+}
 
 @code {
     private string modoSeleccionado = "Luz";
+    private bool cargando = true;
 
     private void CambiarTema(bool isDark)
     {
         modoSeleccionado = isDark ? "Oscuro" : "Luz";
-        StateHasChanged(); 
+        StateHasChanged();
     }
 
     private string ObtenerClase() => modoSeleccionado == "Luz" ? string.Empty : "dark-mode";
 
     protected override async Task OnInitializedAsync()
     {
-        await Loc.InicializarAsync();
+        try
+        {
+            await Loc.InicializarAsync();
+            await Loc.CambiarIdiomaAsync(Loc.IdiomaActual);
+        }
+        finally
+        {
+            cargando = false;
+        }
     }
-
-
 }

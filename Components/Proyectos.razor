@@ -1,7 +1,4 @@
 @inherits LocalizedComponentBase
-@inject HttpClient Http
-@using System.Text.Json
-@using System.Linq
 @using Portfolio.Models
 
 <section id="proyectos" class="seccion">
@@ -56,45 +53,14 @@
 @code {
     private List<Proyecto>? proyectos;
 
-    private static readonly JsonSerializerOptions jsonOptions = new()
+    protected override async Task CargarDatosAsync()
     {
-        PropertyNameCaseInsensitive = true
-    };
+        var lista = await Loc.ObtenerDatosAsync<List<Proyecto>>("proyectos");
 
-    protected override void OnInitialized()
-    {
-        base.OnInitialized(); // ya suscribe StateHasChanged al cambio de idioma
-        Loc.OnIdiomaCambiado += ManejarCambioDeIdioma;
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        await CargarProyectos();
-    }
-
-    private async void ManejarCambioDeIdioma()
-    {
-        await CargarProyectos();
-        StateHasChanged();
-    }
-
-    private async Task CargarProyectos()
-    {
-        var ruta = $"data/proyectos.{Loc.IdiomaActual}.json?v={DateTime.UtcNow.Ticks}";
-        using var respuesta = await Http.GetAsync(ruta);
-        var lista = await respuesta.Content.ReadFromJsonAsync<List<Proyecto>>(jsonOptions);
-
-        // Orden automático: más reciente primero
         proyectos = lista?
             .OrderByDescending(p => ParseAnio(p.Anio))
             .ToList();
     }
 
     private static int ParseAnio(string anio) => int.TryParse(anio, out var n) ? n : 0;
-
-    public override void Dispose()
-    {
-        Loc.OnIdiomaCambiado -= ManejarCambioDeIdioma;
-        base.Dispose();
-    }
 }

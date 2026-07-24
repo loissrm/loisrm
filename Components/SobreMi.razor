@@ -1,6 +1,4 @@
 @inherits LocalizedComponentBase
-@inject HttpClient Http
-@using System.Text.Json
 @using Portfolio.Models
 
 
@@ -300,42 +298,17 @@
     private List<TimelineItem>? experiencia;
     private List<TimelineItem>? educacion;
     private List<EducacionComplementariaItem>? educacionComplementaria;
-    private static readonly JsonSerializerOptions jsonOptions = new()
+    protected override async Task CargarDatosAsync()
     {
-        PropertyNameCaseInsensitive = true
-    };
+        // Carga los 3 archivos JSON en paralelo para mayor rapidez
+        var taskExp = Loc.ObtenerDatosAsync<List<TimelineItem>>("experiencia");
+        var taskEdu = Loc.ObtenerDatosAsync<List<TimelineItem>>("educacion");
+        var taskComp = Loc.ObtenerDatosAsync<List<EducacionComplementariaItem>>("educacion_complementaria");
 
-    protected override void OnInitialized()
-    {
-        base.OnInitialized(); // ya suscribe StateHasChanged al cambio de idioma
-        Loc.OnIdiomaCambiado += ManejarCambioDeIdioma;
-    }
+        await Task.WhenAll(taskExp, taskEdu, taskComp);
 
-    private async void ManejarCambioDeIdioma()
-    {
-        await CargarDatosDeIdioma();
-        StateHasChanged();
-    }
-
-    private async Task CargarDatosDeIdioma()
-    {
-        // Experiencia, educación y educación complementaria tienen un JSON por idioma
-        experiencia = await CargarAsync<TimelineItem>($"data/experiencia.{Loc.IdiomaActual}.json");
-        educacion = await CargarAsync<TimelineItem>($"data/educacion.{Loc.IdiomaActual}.json");
-        educacionComplementaria = await CargarAsync<EducacionComplementariaItem>($"data/educacion-complementaria.{Loc.IdiomaActual}.json");
-    }
-
-    public override void Dispose()
-    {
-        Loc.OnIdiomaCambiado -= ManejarCambioDeIdioma;
-        base.Dispose();
-    }
-
-    private async Task<List<T>> CargarAsync<T>(string ruta)
-    {
-        // El "?v=" con la fecha/hora evita que el navegador sirva una versión cacheada del JSON
-        var rutaSinCache = $"{ruta}?v={DateTime.UtcNow.Ticks}";
-        using var respuesta = await Http.GetAsync(rutaSinCache);
-        return await respuesta.Content.ReadFromJsonAsync<List<T>>(jsonOptions) ?? new List<T>();
+        experiencia = await taskExp;
+        educacion = await taskEdu;
+        educacionComplementaria = await taskComp;
     }
 }

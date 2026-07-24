@@ -23,5 +23,6 @@
   "navbar.inicio":"Home",
   "navbar.sobremi":"About Me",
   "navbar.proyectos":"Projects",
-  "navbar.contacto":"Contact"
+  "navbar.contacto":"Contact",
+  "footer.derechos":"All rights reserved"
 }
