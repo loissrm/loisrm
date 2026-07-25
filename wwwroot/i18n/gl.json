@@ -24,5 +24,11 @@
   "navbar.sobremi":"Sobre Min",
   "navbar.proyectos":"Proxectos",
   "navbar.contacto":"Contacto",
-  "footer.derechos":"Todos os dereitos reservados"
+  "footer.derechos":"Todos os dereitos reservados",
+
+
+    "proyectoDetalle.descripcion":"AudiHub é unha aplicación orientada a centros auditivos que busca dixitalizar e centralizar a xestión de audiometrías, citas médicas e recordatorios.",
+    "portfolio.descripcion":"Son Lois Rodríguez Moimenta e preséntoche o meu portfolio persoal, onde poderás ver todo o que vou aprendendo e os proxectos que vou construíndo."
+
+
 }

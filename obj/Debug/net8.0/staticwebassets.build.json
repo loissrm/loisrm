@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tJmMHNGwXVx8iMjKokaqe1R0NJTqmo4LrpdEPcROg+0=",
+  "Hash": "uTz8ZBrr6EIDhnciao8gdoOatFTPdPydJRm/fGUkL4M=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js",
+      "SourceId": "BlazorWasmPreRendering.Build",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\",
+      "BasePath": "/",
+      "RelativePath": "BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSLibraryModule",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js"
+    },
     {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "Portfolio",
@@ -8491,6 +8510,25 @@
       "OriginalItemSpec": "wwwroot\\js\\scrollspy.js"
     },
     {
+      "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "pdf/Curriculum_LoisRodriguezMoimenta.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf"
+    },
+    {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\sample-data\\weather.json",
       "SourceId": "Portfolio",
       "SourceType": "Discovered",
@@ -8508,6 +8546,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\sitemap.xml",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sitemap.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sitemap.xml"
     }
   ]
 }

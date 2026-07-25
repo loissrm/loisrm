@@ -83,11 +83,11 @@
     align-items: center;
     gap: 12px;
     padding: 12px 22px;
-    border-radius: 999px;
+    border-radius: 20px;
     text-decoration: none;
-    color: var(--btnVolver);
-    background: var(--btnVolverBg);
-    border: 1px solid var(--btnVolverBorder);
+    color: var(--blob2-color);
+    background: var(--blob3-color);
+    border: 1px solid #c0d8f6;
     font-weight: 600;
     font-size: .95rem;
     letter-spacing: .02em;
@@ -99,9 +99,7 @@
 
 .btn-retro:hover {
     transform: translateY(-3px);
-    background: var(--btnVolverBgHover);
-    border-color: var(--btnVolverBorderHover);
-    box-shadow: 0 12px 30px var(--btnVolverShadowHover);
+    border-color: #c0d8f6;
 }
 
 .btn-retro:active {

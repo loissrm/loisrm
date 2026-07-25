@@ -157,8 +157,16 @@
       "PackagePath": "staticwebassets\\js\\scrollspy.js"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\sitemap.xml",
+      "PackagePath": "staticwebassets\\sitemap.xml"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",

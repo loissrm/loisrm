@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "BlazorWasmPreRendering.Build/8.0.1": {
+        "type": "package",
+        "build": {
+          "build/BlazorWasmPreRendering.Build.targets": {},
+          "buildTransitive/BlazorWasmPreRendering.Build.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorWasmPreRendering.Build.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.28": {
         "type": "package",
         "dependencies": {
@@ -452,6 +462,16 @@
       }
     },
     "net8.0/browser-wasm": {
+      "BlazorWasmPreRendering.Build/8.0.1": {
+        "type": "package",
+        "build": {
+          "build/BlazorWasmPreRendering.Build.targets": {},
+          "buildTransitive/BlazorWasmPreRendering.Build.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorWasmPreRendering.Build.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.28": {
         "type": "package",
         "dependencies": {
@@ -903,6 +923,122 @@
     }
   },
   "libraries": {
+    "BlazorWasmPreRendering.Build/8.0.1": {
+      "sha512": "y5yn5QztyEva63FcnFfwa+ySe8nYVYbJVPHRw3oxvOqPgdnm0ronG4IAQlHejRVTcz16Z/iaAZ5ws9vW4gSKtQ==",
+      "type": "package",
+      "path": "blazorwasmprerendering.build/8.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "blazorwasmprerendering.build.8.0.1.nupkg.sha512",
+        "blazorwasmprerendering.build.nuspec",
+        "build/BlazorWasmPreRendering.Build.props",
+        "build/BlazorWasmPreRendering.Build.targets",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorWasmPreRendering.Build.props",
+        "buildTransitive/BlazorWasmPreRendering.Build.props",
+        "staticwebassets/BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.WebHost.dll",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.WebHost.exe",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.WebHost.pdb",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.WebHost.runtimeconfig.json",
+        "tools/net10.0/.webhost/BlazorWasmPreRendering.Build.WebHost.staticwebassets.endpoints.json",
+        "tools/net10.0/AngleSharp.dll",
+        "tools/net10.0/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net10.0/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net10.0/BlazorWasmPreRendering.Build.dll",
+        "tools/net10.0/BlazorWasmPreRendering.Build.exe",
+        "tools/net10.0/BlazorWasmPreRendering.Build.pdb",
+        "tools/net10.0/BlazorWasmPreRendering.Build.runtimeconfig.json",
+        "tools/net10.0/BlazorWasmPreRendering.Build.staticwebassets.endpoints.json",
+        "tools/net10.0/CommandLineSwitchParser.dll",
+        "tools/net10.0/NuGet.Versioning.dll",
+        "tools/net10.0/Toolbelt.Diagnostics.XProcess.dll",
+        "tools/net10.0/bundleconfig.json",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.WebHost.dll",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.WebHost.exe",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.WebHost.pdb",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.WebHost.runtimeconfig.json",
+        "tools/net6.0/.webhost/BlazorWasmPreRendering.Build.WebHost.staticwebassets.endpoints.json",
+        "tools/net6.0/AngleSharp.dll",
+        "tools/net6.0/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net6.0/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net6.0/BlazorWasmPreRendering.Build.dll",
+        "tools/net6.0/BlazorWasmPreRendering.Build.exe",
+        "tools/net6.0/BlazorWasmPreRendering.Build.pdb",
+        "tools/net6.0/BlazorWasmPreRendering.Build.runtimeconfig.json",
+        "tools/net6.0/BlazorWasmPreRendering.Build.staticwebassets.endpoints.json",
+        "tools/net6.0/CommandLineSwitchParser.dll",
+        "tools/net6.0/NuGet.Versioning.dll",
+        "tools/net6.0/Toolbelt.Diagnostics.XProcess.dll",
+        "tools/net6.0/bundleconfig.json",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.WebHost.dll",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.WebHost.exe",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.WebHost.pdb",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.WebHost.runtimeconfig.json",
+        "tools/net7.0/.webhost/BlazorWasmPreRendering.Build.WebHost.staticwebassets.endpoints.json",
+        "tools/net7.0/AngleSharp.dll",
+        "tools/net7.0/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net7.0/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net7.0/BlazorWasmPreRendering.Build.dll",
+        "tools/net7.0/BlazorWasmPreRendering.Build.exe",
+        "tools/net7.0/BlazorWasmPreRendering.Build.pdb",
+        "tools/net7.0/BlazorWasmPreRendering.Build.runtimeconfig.json",
+        "tools/net7.0/BlazorWasmPreRendering.Build.staticwebassets.endpoints.json",
+        "tools/net7.0/CommandLineSwitchParser.dll",
+        "tools/net7.0/NuGet.Versioning.dll",
+        "tools/net7.0/Toolbelt.Diagnostics.XProcess.dll",
+        "tools/net7.0/bundleconfig.json",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.WebHost.dll",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.WebHost.exe",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.WebHost.pdb",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.WebHost.runtimeconfig.json",
+        "tools/net8.0/.webhost/BlazorWasmPreRendering.Build.WebHost.staticwebassets.endpoints.json",
+        "tools/net8.0/AngleSharp.dll",
+        "tools/net8.0/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net8.0/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net8.0/BlazorWasmPreRendering.Build.dll",
+        "tools/net8.0/BlazorWasmPreRendering.Build.exe",
+        "tools/net8.0/BlazorWasmPreRendering.Build.pdb",
+        "tools/net8.0/BlazorWasmPreRendering.Build.runtimeconfig.json",
+        "tools/net8.0/BlazorWasmPreRendering.Build.staticwebassets.endpoints.json",
+        "tools/net8.0/CommandLineSwitchParser.dll",
+        "tools/net8.0/NuGet.Versioning.dll",
+        "tools/net8.0/Toolbelt.Diagnostics.XProcess.dll",
+        "tools/net8.0/bundleconfig.json",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.WebHost.dll",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.WebHost.exe",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.WebHost.pdb",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.WebHost.runtimeconfig.json",
+        "tools/net9.0/.webhost/BlazorWasmPreRendering.Build.WebHost.staticwebassets.endpoints.json",
+        "tools/net9.0/AngleSharp.dll",
+        "tools/net9.0/BlazorWasmPreRendering.Build.Shared.dll",
+        "tools/net9.0/BlazorWasmPreRendering.Build.Shared.pdb",
+        "tools/net9.0/BlazorWasmPreRendering.Build.dll",
+        "tools/net9.0/BlazorWasmPreRendering.Build.exe",
+        "tools/net9.0/BlazorWasmPreRendering.Build.pdb",
+        "tools/net9.0/BlazorWasmPreRendering.Build.runtimeconfig.json",
+        "tools/net9.0/BlazorWasmPreRendering.Build.staticwebassets.endpoints.json",
+        "tools/net9.0/CommandLineSwitchParser.dll",
+        "tools/net9.0/NuGet.Versioning.dll",
+        "tools/net9.0/Toolbelt.Diagnostics.XProcess.dll",
+        "tools/net9.0/bundleconfig.json"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/8.0.28": {
       "sha512": "GmPOLqxrZl05wwfwYlgcpJaxt5OF2Cb9llylCZgLjoYoS53ow1SMKUxwN5ICwK+Z2ZY3h+vaGNmfFlMLnG49nA==",
       "type": "package",
@@ -1835,6 +1971,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BlazorWasmPreRendering.Build >= 8.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.28",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.28",
       "Microsoft.NET.ILLink.Tasks >= 8.0.29",
@@ -1883,6 +2020,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BlazorWasmPreRendering.Build": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[8.0.28, )"

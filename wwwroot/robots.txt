@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loisrm.pages.dev/sitemap.xml

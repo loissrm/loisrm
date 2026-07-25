@@ -1031,3 +1031,4 @@ C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\compressed\
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\compressed\kebb2phzoj.gz
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\compressed\yiw5n7az2y.gz
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\compressed\tcvngzdtmt.gz
+C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\jsmodules\jsmodules.build.manifest.json

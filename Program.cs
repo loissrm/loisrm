@@ -6,9 +6,15 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
-builder.Services.AddScoped<Portfolio.Services.LocalizationService>();
-
+Program.ConfigureServices(builder.Services, builder.HostEnvironment.BaseAddress);
 
 await builder.Build().RunAsync();
+
+public partial class Program
+{
+    public static void ConfigureServices(IServiceCollection services, string baseAddress)
+    {
+        services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(baseAddress) });
+        services.AddScoped<Portfolio.Services.LocalizationService>();
+    }
+}

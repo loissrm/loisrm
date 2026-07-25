@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U9JzVJu5L+0=",
+  "dgSpecHash": "VqLtjqFviEU=",
   "success": true,
   "projectFilePath": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\Portfolio.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\blazorwasmprerendering.build.8.0.1.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.28\\microsoft.aspnetcore.authorization.8.0.28.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.28\\microsoft.aspnetcore.components.8.0.28.nupkg.sha512",
     "C:\\Users\\loisr\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.28\\microsoft.aspnetcore.components.analyzers.8.0.28.nupkg.sha512",
