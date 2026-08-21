@@ -16,12 +16,10 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\8.0.30\build\Microsoft.NET.Sdk.WebAssembly.Pack.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\8.0.30\build\Microsoft.NET.Sdk.WebAssembly.Pack.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks\8.0.30\build\Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks\8.0.30\build\Microsoft.NET.ILLink.Tasks.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\8.0.28\build\net8.0\Microsoft.AspNetCore.Components.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly\8.0.28\build\net8.0\Microsoft.AspNetCore.Components.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorwasmprerendering.build\8.0.1\buildTransitive\BlazorWasmPreRendering.Build.props" Condition="Exists('$(NuGetPackageRoot)blazorwasmprerendering.build\8.0.1\buildTransitive\BlazorWasmPreRendering.Build.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_NET_Sdk_WebAssembly_Pack Condition=" '$(PkgMicrosoft_NET_Sdk_WebAssembly_Pack)' == '' ">C:\Users\loisr\.nuget\packages\microsoft.net.sdk.webassembly.pack\8.0.30</PkgMicrosoft_NET_Sdk_WebAssembly_Pack>
     <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">C:\Users\loisr\.nuget\packages\microsoft.net.illink.tasks\8.0.30</PkgMicrosoft_NET_ILLink_Tasks>
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">C:\Users\loisr\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\8.0.28</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>
-    <PkgBlazorWasmPreRendering_Build Condition=" '$(PkgBlazorWasmPreRendering_Build)' == '' ">C:\Users\loisr\.nuget\packages\blazorwasmprerendering.build\8.0.1</PkgBlazorWasmPreRendering_Build>
   </PropertyGroup>
 </Project>
