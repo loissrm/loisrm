@@ -1,17 +1,16 @@
 ﻿@inherits LayoutComponentBase
 @using Portfolio.Components
 @inject LocalizationService Loc
+@inject ThemeService Theme
+@implements IDisposable
 
 @if (cargando)
 {
-
     <div></div>
 }
 else
 {
-    <div class="page @ObtenerClase()">
-        <ControlesTop OnThemeChanged="CambiarTema" />
-
+    <div class="page @Theme.ObtenerClaseCss()">
         <main id="portfolio" class="portfolio">
             @Body
         </main>
@@ -19,27 +18,31 @@ else
 }
 
 @code {
-    private string modoSeleccionado = "Luz";
     private bool cargando = true;
-
-    private void CambiarTema(bool isDark)
-    {
-        modoSeleccionado = isDark ? "Oscuro" : "Luz";
-        StateHasChanged();
-    }
-
-    private string ObtenerClase() => modoSeleccionado == "Luz" ? string.Empty : "dark-mode";
 
     protected override async Task OnInitializedAsync()
     {
+        Theme.OnTemaCambiado += RefrescarVista;
+
         try
         {
             await Loc.InicializarAsync();
             await Loc.CambiarIdiomaAsync(Loc.IdiomaActual);
+            await Theme.InicializarAsync();
         }
         finally
         {
             cargando = false;
         }
+    }
+
+    private void RefrescarVista()
+    {
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        Theme.OnTemaCambiado -= RefrescarVista;
     }
 }

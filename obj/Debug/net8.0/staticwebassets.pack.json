@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets\\data\\Proyectos\\AudiHub\\gl.json"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\Proyectos\\FrogJumping\\en.json",
+      "PackagePath": "staticwebassets\\data\\Proyectos\\FrogJumping\\en.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\Proyectos\\FrogJumping\\es.json",
+      "PackagePath": "staticwebassets\\data\\Proyectos\\FrogJumping\\es.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\Proyectos\\FrogJumping\\gl.json",
+      "PackagePath": "staticwebassets\\data\\Proyectos\\FrogJumping\\gl.json"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\educacion-complementaria.en.json",
       "PackagePath": "staticwebassets\\data\\educacion-complementaria.en.json"
     },
@@ -83,6 +95,10 @@
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\data\\proyectos.gl.json",
       "PackagePath": "staticwebassets\\data\\proyectos.gl.json"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\googlebb7af066dc7317bb.html",
+      "PackagePath": "staticwebassets\\googlebb7af066dc7317bb.html"
     },
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\i18n\\en.json",
@@ -149,6 +165,30 @@
       "PackagePath": "staticwebassets\\img\\proyectos\\AudiHub\\DeseñoLogoCompleto.png"
     },
     {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\EscenaFinalNivel1FrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\EscenaFinalNivel1FrogJumping.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\EscenaIncioFrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\EscenaIncioFrogJumping.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\EscenaNivelFrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\EscenaNivelFrogJumping.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\EscenaNiveñesFrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\EscenaNiveñesFrogJumping.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\EscenaPausaFrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\EscenaPausaFrogJumping.png"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\img\\proyectos\\FrogJumping\\Nivel1CompletadoFrogJumping.png",
+      "PackagePath": "staticwebassets\\img\\proyectos\\FrogJumping\\Nivel1CompletadoFrogJumping.png"
+    },
+    {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
@@ -159,6 +199,10 @@
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf",
       "PackagePath": "staticwebassets\\pdf\\Curriculum_LoisRodriguezMoimenta.pdf"
+    },
+    {
+      "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
     },
     {
       "Id": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\wwwroot\\sample-data\\weather.json",

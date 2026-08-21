@@ -40,9 +40,9 @@
 
   {
     "titulo": "Frog Jumping",
-    "descripcion": "Es un juego de plataformas basado en Super Mario Bros, donde el objetivo es pasarse los niveles llegando al final del mismo.",
+    "descripcion": "Es un juego de plataformas 2D con estética pixel art, donde el objetivo es guiar a la rana de plataforma en plataforma hasta completar cada nivel.",
     "anio": "2025",
-    "url": "https://github.com/loissrm/DAM_UF2_Proyecto/tree/master",
+    "url": "/proyecto/frogJumping",
     "imagen": "",
     "tecnologias": [
       { "nombre": "C#", "colorHex": "390090" },

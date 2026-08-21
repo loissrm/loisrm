@@ -397,4 +397,10 @@
     {
         await Loc.CargarTraduccionesProyectoAsync("AudiHub");
     }
+
+    public override void Dispose()
+    {
+        base.Dispose();
+        Loc.LimpiarProyectoActual();
+    }
 }

@@ -2,6 +2,8 @@
 @using Portfolio.Components
 @inherits LocalizedComponentBase
 @inject IJSRuntime JS
+@inject ThemeService Theme
+@inject NavigationManager Navigation
 
 <PageTitle>Lois Rodríguez Moimenta · Portfolio</PageTitle>
 <HeadContent>
@@ -11,6 +13,9 @@
     <meta property="og:image" content=".\img\imagenPerfil\perfil.jpeg" />
     <meta property="og:type" content="website" />
 </HeadContent>
+
+<ControlesTop IsDark="@Theme.EsOscuro" OnThemeChanged="CambiarTema" />
+
 <NavBar />
 
 <div class="secciones">
@@ -22,15 +27,27 @@
 
 <Footer/>
 
+@code {
+    private async Task CambiarTema(bool isDark)
+    {
+        await Theme.CambiarTemaAsync(isDark);
+    }
 
-@code{
-        protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            // El "?v=" evita que el navegador sirva una versión vieja cacheada del módulo JS
+            // 1. Cargamos e iniciamos el ScrollSpy para que la vista salte a la sección (ej: #proyectos)
             var module = await JS.InvokeAsync<IJSObjectReference>("import", $"./js/scrollspy.js?v={DateTime.UtcNow.Ticks}");
             await module.InvokeVoidAsync("iniciarScrollSpy");
+
+            // 2. Limpiamos la URL visualmente SOLO si el usuario ha refrescado estando en la cima (scroll = 0)
+            // de forma que si viene de un enlace a #proyectos, el navegador respete la navegación.
+            await JS.InvokeVoidAsync("eval", @"
+                if (window.location.hash && window.scrollY === 0) {
+                    history.replaceState(null, '', window.location.pathname);
+                }
+            ");
         }
     }
 }
