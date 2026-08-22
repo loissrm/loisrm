@@ -25,8 +25,7 @@
   "navbar.proyectos":"Projects",
   "navbar.contacto":"Contact",
   "footer.derechos":"All rights reserved",
-
-
+  "herramientas": "Tools",
   "proyectoDetalle.descripcion":"AudiHub is an app designed for hearing centres that aims to digitise and centralise the management of hearing tests, medical appointments and reminders.",
   "proyectoDetalle.descripcion.FrogJumping": "Frog Jumping is a 2D platformer with a pixel art aesthetic, where the goal is to guide the frog from platform to platform until you complete each level.",
   "portfolio.descripcion":"I'm Lois Rodríguez Moimenta, and this is my personal portfolio, where you can see everything I'm learning and the projects I'm building."

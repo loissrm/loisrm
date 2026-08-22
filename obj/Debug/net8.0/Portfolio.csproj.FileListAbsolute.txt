@@ -1018,7 +1018,6 @@ C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\Portfolio.p
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\ref\Portfolio.dll
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\scopedcss\Pages\Proyectos\AudiHub\AudiHub.razor.rz.scp.css
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\scopedcss\Pages\Proximamente\Proximamente.razor.rz.scp.css
-C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\jsmodules\jsmodules.build.manifest.json
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\obj\Debug\net8.0\scopedcss\Pages\Proyectos\FrogJumping\FrogJumping.razor.rz.scp.css
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\bin\Debug\net8.0\wwwroot\_framework\dotnet.native.8.0.30.hxkr2o9l17.js
 C:\Users\loisr\Documents\Blazor\Portfolio\Portfolio\bin\Debug\net8.0\wwwroot\_framework\dotnet.runtime.8.0.30.2hbk5wbt5m.js

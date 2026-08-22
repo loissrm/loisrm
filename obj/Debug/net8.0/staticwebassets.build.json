@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7w7yX8S6FqzLKeUkq8S3m1sRFtDO70l/YCw6xIhcBxs=",
+  "Hash": "RL+hBIhTUxosTL4tHf8gUvM4Z3a8V3aqXZs6fPp2MFA=",
   "Source": "Portfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js",
-      "SourceId": "BlazorWasmPreRendering.Build",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\",
-      "BasePath": "/",
-      "RelativePath": "BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "JSModule",
-      "AssetTraitValue": "JSLibraryModule",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\loisr\\.nuget\\packages\\blazorwasmprerendering.build\\8.0.1\\staticwebassets\\BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js"
-    },
     {
       "Identity": "C:\\Users\\loisr\\Documents\\Blazor\\Portfolio\\Portfolio\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "Portfolio",

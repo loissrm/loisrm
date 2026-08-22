@@ -210,7 +210,7 @@
             </div>
 
             <div class="habilidad-categoria">
-                <p class="habilidad-categoria-titulo tag-type">Herramientas</p>
+                <p class="habilidad-categoria-titulo tag-type">@Loc.T("herramientas")</p>
                 <div class="habilidad-iconos">
 
                     <div class="skill-icon-item">
@@ -303,7 +303,7 @@
         // Carga los 3 archivos JSON en paralelo para mayor rapidez
         var taskExp = Loc.ObtenerDatosAsync<List<TimelineItem>>("experiencia");
         var taskEdu = Loc.ObtenerDatosAsync<List<TimelineItem>>("educacion");
-        var taskComp = Loc.ObtenerDatosAsync<List<EducacionComplementariaItem>>("educacion_complementaria");
+        var taskComp = Loc.ObtenerDatosAsync<List<EducacionComplementariaItem>>("educacion-complementaria");
 
         await Task.WhenAll(taskExp, taskEdu, taskComp);
 
